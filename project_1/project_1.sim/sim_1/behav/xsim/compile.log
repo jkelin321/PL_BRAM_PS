@@ -1,0 +1,73 @@
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/jack/erase/project_1/project_1.ip_user_files/bd/design_1/ip/design_1_lmb_bram_0/sim/design_1_lmb_bram_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module design_1_lmb_bram_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/jack/erase/project_1/project_1.ip_user_files/bd/design_1/ip/design_1_xbar_0/sim/design_1_xbar_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module design_1_xbar_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/jack/erase/project_1/project_1.ip_user_files/bd/design_1/ip/design_1_microblaze_0_xlconcat_0/sim/design_1_microblaze_0_xlconcat_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module design_1_microblaze_0_xlconcat_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/jack/erase/project_1/project_1.ip_user_files/bd/design_1/ip/design_1_clk_wiz_1_0/design_1_clk_wiz_1_0_clk_wiz.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module design_1_clk_wiz_1_0_clk_wiz
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/jack/erase/project_1/project_1.ip_user_files/bd/design_1/ip/design_1_clk_wiz_1_0/design_1_clk_wiz_1_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module design_1_clk_wiz_1_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/jack/erase/project_1/project_1.ip_user_files/bd/design_1/ip/design_1_blk_mem_gen_0_0/sim/design_1_blk_mem_gen_0_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module design_1_blk_mem_gen_0_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/jack/erase/project_1/project_1.ip_user_files/bd/design_1/ipshared/91fb/edge_detector.srcs/sources_1/imports/new/edge_det.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module edge_det
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/jack/erase/project_1/project_1.ip_user_files/bd/design_1/ip/design_1_edge_det_0_0/sim/design_1_edge_det_0_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module design_1_edge_det_0_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/jack/erase/project_1/project_1.ip_user_files/bd/design_1/ip/design_1_edge_det_1_0/sim/design_1_edge_det_1_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module design_1_edge_det_1_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/jack/erase/project_1/project_1.ip_user_files/bd/design_1/ipshared/2989/src/addr_counter.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module addr_counter
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/jack/erase/project_1/project_1.ip_user_files/bd/design_1/ip/design_1_addr_counter_0_0/sim/design_1_addr_counter_0_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module design_1_addr_counter_0_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/jack/erase/project_1/project_1.ip_user_files/bd/design_1/ipshared/b43f/hdl/SM.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module SM
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/jack/erase/project_1/project_1.ip_user_files/bd/design_1/ipshared/b43f/hdl/gpio_to_bram_v1_0_S00_AXI.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module gpio_to_bram_v1_0_S00_AXI
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/jack/erase/project_1/project_1.ip_user_files/bd/design_1/ipshared/b43f/hdl/gpio_to_bram_v1_0_S_AXI_INTR.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module gpio_to_bram_v1_0_S_AXI_INTR
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/jack/erase/project_1/project_1.ip_user_files/bd/design_1/ipshared/b43f/hdl/gpio_to_bram_v1_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module gpio_to_bram_v1_0
+WARNING: [VRFC 10-2938] 'w_interrupt' is already implicitly declared on line 127 [/home/jack/erase/project_1/project_1.ip_user_files/bd/design_1/ipshared/b43f/hdl/gpio_to_bram_v1_0.v:155]
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/jack/erase/project_1/project_1.ip_user_files/bd/design_1/ip/design_1_gpio_to_bram_0_1/sim/design_1_gpio_to_bram_0_1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module design_1_gpio_to_bram_0_1
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/jack/erase/project_1/project_1.ip_user_files/bd/design_1/ip/design_1_system_ila_0_2/bd_0/ip/ip_0/sim/bd_378d_ila_lib_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module bd_378d_ila_lib_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/jack/erase/project_1/project_1.ip_user_files/bd/design_1/ip/design_1_system_ila_0_2/bd_0/sim/bd_378d.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module bd_378d
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/jack/erase/project_1/project_1.ip_user_files/bd/design_1/ip/design_1_system_ila_0_2/sim/design_1_system_ila_0_2.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module design_1_system_ila_0_2
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/jack/erase/project_1/project_1.ip_user_files/bd/design_1/sim/design_1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module design_1
+INFO: [VRFC 10-311] analyzing module design_1_microblaze_0_axi_periph_0
+INFO: [VRFC 10-311] analyzing module m00_couplers_imp_8RVYHO
+INFO: [VRFC 10-311] analyzing module m01_couplers_imp_1UTB3Y5
+INFO: [VRFC 10-311] analyzing module m02_couplers_imp_7ANRHB
+INFO: [VRFC 10-311] analyzing module m03_couplers_imp_1W07O72
+INFO: [VRFC 10-311] analyzing module m04_couplers_imp_5LX7BU
+INFO: [VRFC 10-311] analyzing module microblaze_0_local_memory_imp_1K0VQXK
+INFO: [VRFC 10-311] analyzing module s00_couplers_imp_1RZP34U
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/jack/erase/project_1/project_1.gen/sources_1/bd/design_1/hdl/design_1_wrapper.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module design_1_wrapper
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/jack/erase/project_1/project_1.sim/sim_1/behav/xsim/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/jack/erase/project_1/project_1.ip_user_files/bd/design_1/ip/design_1_microblaze_0_0/sim/design_1_microblaze_0_0.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'design_1_microblaze_0_0'
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/jack/erase/project_1/project_1.ip_user_files/bd/design_1/ip/design_1_dlmb_v10_0/sim/design_1_dlmb_v10_0.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'design_1_dlmb_v10_0'
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/jack/erase/project_1/project_1.ip_user_files/bd/design_1/ip/design_1_ilmb_v10_0/sim/design_1_ilmb_v10_0.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'design_1_ilmb_v10_0'
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/jack/erase/project_1/project_1.ip_user_files/bd/design_1/ip/design_1_dlmb_bram_if_cntlr_0/sim/design_1_dlmb_bram_if_cntlr_0.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'design_1_dlmb_bram_if_cntlr_0'
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/jack/erase/project_1/project_1.ip_user_files/bd/design_1/ip/design_1_ilmb_bram_if_cntlr_0/sim/design_1_ilmb_bram_if_cntlr_0.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'design_1_ilmb_bram_if_cntlr_0'
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/jack/erase/project_1/project_1.ip_user_files/bd/design_1/ip/design_1_microblaze_0_axi_intc_0/sim/design_1_microblaze_0_axi_intc_0.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'design_1_microblaze_0_axi_intc_0'
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/jack/erase/project_1/project_1.ip_user_files/bd/design_1/ip/design_1_mdm_1_0/sim/design_1_mdm_1_0.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'design_1_mdm_1_0'
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/jack/erase/project_1/project_1.ip_user_files/bd/design_1/ip/design_1_rst_clk_wiz_1_100M_0/sim/design_1_rst_clk_wiz_1_100M_0.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'design_1_rst_clk_wiz_1_100M_0'
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/jack/erase/project_1/project_1.ip_user_files/bd/design_1/ip/design_1_axi_uartlite_0_0/sim/design_1_axi_uartlite_0_0.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'design_1_axi_uartlite_0_0'
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/jack/erase/project_1/project_1.ip_user_files/bd/design_1/ip/design_1_axi_bram_ctrl_0_0/sim/design_1_axi_bram_ctrl_0_0.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'design_1_axi_bram_ctrl_0_0'

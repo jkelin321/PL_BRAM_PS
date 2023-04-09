@@ -1,0 +1,35 @@
+<?xml version="1.0"?>
+<Runs Version="1" Minor="0">
+	<Run Id="design_1_microblaze_0_0_synth_1" LaunchDir="/home/jack/erase/project_1/project_1.runs/design_1_microblaze_0_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="design_1_dlmb_v10_0_synth_1" LaunchDir="/home/jack/erase/project_1/project_1.runs/design_1_dlmb_v10_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="design_1_ilmb_v10_0_synth_1" LaunchDir="/home/jack/erase/project_1/project_1.runs/design_1_ilmb_v10_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado" IsOrderedIPRun="true">
+		<Parent Id="design_1_dlmb_v10_0_synth_1"/>
+	</Run>
+	<Run Id="design_1_dlmb_bram_if_cntlr_0_synth_1" LaunchDir="/home/jack/erase/project_1/project_1.runs/design_1_dlmb_bram_if_cntlr_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="design_1_ilmb_bram_if_cntlr_0_synth_1" LaunchDir="/home/jack/erase/project_1/project_1.runs/design_1_ilmb_bram_if_cntlr_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="design_1_lmb_bram_0_synth_1" LaunchDir="/home/jack/erase/project_1/project_1.runs/design_1_lmb_bram_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="design_1_xbar_0_synth_1" LaunchDir="/home/jack/erase/project_1/project_1.runs/design_1_xbar_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="design_1_microblaze_0_axi_intc_0_synth_1" LaunchDir="/home/jack/erase/project_1/project_1.runs/design_1_microblaze_0_axi_intc_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="design_1_mdm_1_0_synth_1" LaunchDir="/home/jack/erase/project_1/project_1.runs/design_1_mdm_1_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="design_1_clk_wiz_1_0_synth_1" LaunchDir="/home/jack/erase/project_1/project_1.runs/design_1_clk_wiz_1_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="design_1_rst_clk_wiz_1_100M_0_synth_1" LaunchDir="/home/jack/erase/project_1/project_1.runs/design_1_rst_clk_wiz_1_100M_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="design_1_axi_uartlite_0_0_synth_1" LaunchDir="/home/jack/erase/project_1/project_1.runs/design_1_axi_uartlite_0_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="design_1_axi_bram_ctrl_0_0_synth_1" LaunchDir="/home/jack/erase/project_1/project_1.runs/design_1_axi_bram_ctrl_0_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="design_1_addr_counter_0_0_synth_1" LaunchDir="/home/jack/erase/project_1/project_1.runs/design_1_addr_counter_0_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="design_1_blk_mem_gen_0_0_synth_1" LaunchDir="/home/jack/erase/project_1/project_1.runs/design_1_blk_mem_gen_0_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="design_1_gpio_to_bram_0_1_synth_1" LaunchDir="/home/jack/erase/project_1/project_1.runs/design_1_gpio_to_bram_0_1_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="design_1_system_ila_0_0_synth_1" LaunchDir="/home/jack/erase/project_1/project_1.runs/design_1_system_ila_0_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="design_1_system_ila_1_0_synth_1" LaunchDir="/home/jack/erase/project_1/project_1.runs/design_1_system_ila_1_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="design_1_system_ila_2_0_synth_1" LaunchDir="/home/jack/erase/project_1/project_1.runs/design_1_system_ila_2_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="design_1_system_ila_3_0_synth_1" LaunchDir="/home/jack/erase/project_1/project_1.runs/design_1_system_ila_3_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="design_1_system_ila_4_0_synth_1" LaunchDir="/home/jack/erase/project_1/project_1.runs/design_1_system_ila_4_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="design_1_system_ila_5_0_synth_1" LaunchDir="/home/jack/erase/project_1/project_1.runs/design_1_system_ila_5_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="design_1_system_ila_6_0_synth_1" LaunchDir="/home/jack/erase/project_1/project_1.runs/design_1_system_ila_6_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="design_1_system_ila_7_0_synth_1" LaunchDir="/home/jack/erase/project_1/project_1.runs/design_1_system_ila_7_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="design_1_system_ila_8_0_synth_1" LaunchDir="/home/jack/erase/project_1/project_1.runs/design_1_system_ila_8_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Parameters>
+		<Parameter Name="runs.monitorLSFJobs" Val="true" Type="bool"/>
+		<Parameter Name="runs.enableClusterConf" Val="true" Type="bool"/>
+	</Parameters>
+</Runs>
+

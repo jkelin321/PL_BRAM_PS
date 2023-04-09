@@ -1,0 +1,205 @@
+{
+   "ActiveEmotionalView":"Reduced Jogs",
+   "Addressing View_Layers":"/reset_rtl_0_1:false|/rst_clk_wiz_1_100M_mb_reset:false|/clk_100MHz_1:false|/gpio_to_bram_0_irq:false|/axi_uartlite_0_interrupt:false|/rst_clk_wiz_1_100M_peripheral_aresetn:false|/clk_wiz_1_clk_out1:false|/rst_clk_wiz_1_100M_bus_struct_reset:false|/mdm_1_debug_sys_rst:false|",
+   "Addressing View_ScaleFactor":"0.972944",
+   "Addressing View_TopLeft":"-88,-193",
+   "Color Coded_ScaleFactor":"0.652437",
+   "Color Coded_TopLeft":"-133,-162",
+   "Default View_Layers":"/reset_rtl_0_1:true|/rst_clk_wiz_1_100M_mb_reset:true|/clk_100MHz_1:true|/gpio_to_bram_0_irq:true|/axi_uartlite_0_interrupt:true|/rst_clk_wiz_1_100M_peripheral_aresetn:true|/clk_wiz_1_clk_out1:true|/rst_clk_wiz_1_100M_bus_struct_reset:true|/mdm_1_debug_sys_rst:true|",
+   "Default View_ScaleFactor":"0.661855",
+   "Default View_TopLeft":"-134,-144",
+   "Display-PortTypeClock":"true",
+   "Display-PortTypeInterrupt":"true",
+   "Display-PortTypeOthers":"true",
+   "Display-PortTypeReset":"true",
+   "ExpandedHierarchyInLayout":"",
+   "Grouping and No Loops_ScaleFactor":"0.601613",
+   "Grouping and No Loops_TopLeft":"-243,0",
+   "Interfaces View_Layers":"/reset_rtl_0_1:false|/rst_clk_wiz_1_100M_mb_reset:false|/clk_100MHz_1:false|/gpio_to_bram_0_irq:false|/axi_uartlite_0_interrupt:false|/rst_clk_wiz_1_100M_peripheral_aresetn:false|/clk_wiz_1_clk_out1:false|/rst_clk_wiz_1_100M_bus_struct_reset:false|/mdm_1_debug_sys_rst:false|",
+   "Interfaces View_ScaleFactor":"1.01607",
+   "Interfaces View_TopLeft":"-24,-149",
+   "No Loops_ExpandedHierarchyInLayout":"",
+   "No Loops_Layers":"/reset_rtl_0_1:true|/rst_clk_wiz_1_100M_mb_reset:true|/clk_100MHz_1:true|/gpio_to_bram_0_irq:true|/axi_uartlite_0_interrupt:true|/rst_clk_wiz_1_100M_peripheral_aresetn:true|/clk_wiz_1_clk_out1:true|/rst_clk_wiz_1_100M_bus_struct_reset:true|/mdm_1_debug_sys_rst:true|",
+   "No Loops_Layout":"# # String gsaved with Nlview 7.0r4  2019-12-20 bk=1.5203 VDI=41 GEI=36 GUI=JA:10.0 TLS
+#  -string -flagsOSRD
+preplace port uart_rtl_0 -pg 1 -lvl 8 -x 2420 -y 990 -defaultsOSRD
+preplace port port-id_clk_100MHz -pg 1 -lvl 0 -x 0 -y 610 -defaultsOSRD
+preplace port port-id_reset_rtl_0 -pg 1 -lvl 0 -x 0 -y 430 -defaultsOSRD
+preplace port port-id_i_sw1 -pg 1 -lvl 0 -x 0 -y 670 -defaultsOSRD
+preplace port port-id_i_sw2 -pg 1 -lvl 0 -x 0 -y 870 -defaultsOSRD
+preplace port port-id_btn -pg 1 -lvl 0 -x 0 -y 690 -defaultsOSRD
+preplace inst microblaze_0 -pg 1 -lvl 4 -x 1160 -y 70 -swap {45 1 2 3 16 5 6 7 8 9 10 11 12 13 14 15 25 17 18 19 20 21 22 23 24 4 26 27 28 29 30 31 32 33 34 35 36 37 38 39 40 41 42 43 44 0 46 47 48 49 50 51 52 53 54 56 55} -defaultsOSRD -pinDir INTERRUPT left -pinY INTERRUPT 140L -pinDir DLMB right -pinY DLMB 420R -pinDir ILMB right -pinY ILMB 440R -pinDir M_AXI_DP right -pinY M_AXI_DP 0R -pinDir DEBUG left -pinY DEBUG 0L -pinDir Clk left -pinY Clk 440L -pinDir Reset left -pinY Reset 160L
+preplace inst microblaze_0_local_memory -pg 1 -lvl 5 -x 1610 -y 490 -swap {0 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 27 26} -defaultsOSRD -pinDir DLMB left -pinY DLMB 0L -pinDir ILMB left -pinY ILMB 20L -pinDir LMB_Clk left -pinY LMB_Clk 60L -pinDir SYS_Rst left -pinY SYS_Rst 40L
+preplace inst microblaze_0_axi_periph -pg 1 -lvl 5 -x 1610 -y 70 -swap {0 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29 30 31 32 33 34 35 36 37 38 39 40 41 42 43 44 45 46 47 48 49 50 51 52 53 54 55 56 57 58 59 100 61 62 63 64 65 66 67 68 69 70 71 72 73 74 75 76 77 78 79 60 81 82 83 84 85 86 87 88 89 90 91 92 93 94 95 96 97 98 99 80 101 102 103 104 105 106 107 108 109 110 111 112 113 114 115 116 117 118 119 120 127 121 128 122 129 123 130 124 131 125 132 126 133} -defaultsOSRD -pinDir S00_AXI left -pinY S00_AXI 0L -pinDir M00_AXI left -pinY M00_AXI 20L -pinDir M01_AXI right -pinY M01_AXI 120R -pinDir M02_AXI right -pinY M02_AXI 300R -pinDir M03_AXI right -pinY M03_AXI 260R -pinDir M04_AXI right -pinY M04_AXI 280R -pinDir ACLK left -pinY ACLK 40L -pinDir ARESETN left -pinY ARESETN 180L -pinDir S00_ACLK left -pinY S00_ACLK 60L -pinDir S00_ARESETN left -pinY S00_ARESETN 200L -pinDir M00_ACLK left -pinY M00_ACLK 80L -pinDir M00_ARESETN left -pinY M00_ARESETN 220L -pinDir M01_ACLK left -pinY M01_ACLK 100L -pinDir M01_ARESETN left -pinY M01_ARESETN 240L -pinDir M02_ACLK left -pinY M02_ACLK 120L -pinDir M02_ARESETN left -pinY M02_ARESETN 260L -pinDir M03_ACLK left -pinY M03_ACLK 140L -pinDir M03_ARESETN left -pinY M03_ARESETN 280L -pinDir M04_ACLK left -pinY M04_ACLK 160L -pinDir M04_ARESETN left -pinY M04_ARESETN 300L
+preplace inst microblaze_0_axi_intc -pg 1 -lvl 3 -x 760 -y 210 -swap {18 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 0 19 20 21 24 23 26 25 22} -defaultsOSRD -pinDir s_axi right -pinY s_axi 380R -pinDir interrupt right -pinY interrupt 0R -pinDir s_axi_aclk left -pinY s_axi_aclk 340L -pinDir s_axi_aresetn left -pinY s_axi_aresetn 320L -pinBusDir intr left -pinBusY intr 380L -pinDir processor_clk left -pinY processor_clk 360L -pinDir processor_rst left -pinY processor_rst 0L
+preplace inst microblaze_0_xlconcat -pg 1 -lvl 2 -x 400 -y 930 -swap {1 2 0} -defaultsOSRD -pinBusDir In0 right -pinBusY In0 120R -pinBusDir In1 right -pinBusY In1 140R -pinBusDir dout right -pinBusY dout 0R
+preplace inst mdm_1 -pg 1 -lvl 3 -x 760 -y 70 -defaultsOSRD -pinDir MBDEBUG_0 right -pinY MBDEBUG_0 0R -pinDir Debug_SYS_Rst left -pinY Debug_SYS_Rst 0L
+preplace inst clk_wiz_1 -pg 1 -lvl 1 -x 120 -y 490 -defaultsOSRD -pinDir resetn left -pinY resetn 0L -pinDir clk_in1 left -pinY clk_in1 120L -pinDir clk_out1 right -pinY clk_out1 0R -pinDir locked right -pinY locked 20R
+preplace inst rst_clk_wiz_1_100M -pg 1 -lvl 2 -x 400 -y 70 -swap {1 0 4 3 2 7 8 5 6 9} -defaultsOSRD -pinDir slowest_sync_clk left -pinY slowest_sync_clk 420L -pinDir ext_reset_in left -pinY ext_reset_in 360L -pinDir aux_reset_in left -pinY aux_reset_in 460L -pinDir mb_debug_sys_rst right -pinY mb_debug_sys_rst 0R -pinDir dcm_locked left -pinY dcm_locked 440L -pinDir mb_reset right -pinY mb_reset 60R -pinBusDir bus_struct_reset right -pinBusY bus_struct_reset 80R -pinBusDir peripheral_reset right -pinBusY peripheral_reset 20R -pinBusDir interconnect_aresetn right -pinBusY interconnect_aresetn 40R -pinBusDir peripheral_aresetn right -pinBusY peripheral_aresetn 460R
+preplace inst axi_uartlite_0 -pg 1 -lvl 6 -x 1980 -y 990 -defaultsOSRD -pinDir S_AXI left -pinY S_AXI 0L -pinDir UART right -pinY UART 0R -pinDir s_axi_aclk left -pinY s_axi_aclk 20L -pinDir s_axi_aresetn left -pinY s_axi_aresetn 40L -pinDir interrupt left -pinY interrupt 60L
+preplace inst axi_bram_ctrl_0 -pg 1 -lvl 6 -x 1980 -y 190 -defaultsOSRD -pinDir S_AXI left -pinY S_AXI 0L -pinDir BRAM_PORTA right -pinY BRAM_PORTA 40R -pinDir s_axi_aclk left -pinY s_axi_aclk 20L -pinDir s_axi_aresetn left -pinY s_axi_aresetn 40L
+preplace inst blk_mem_gen_0 -pg 1 -lvl 7 -x 2270 -y 230 -swap {8 1 2 3 4 5 6 7 0 9 10 11 12 13 14 15 16 17} -defaultsOSRD -pinDir BRAM_PORTA left -pinY BRAM_PORTA 100L -pinDir BRAM_PORTB left -pinY BRAM_PORTB 0L -pinDir rsta_busy right -pinY rsta_busy 0R -pinDir rstb_busy right -pinY rstb_busy 20R
+preplace inst gpio_to_bram_0 -pg 1 -lvl 6 -x 1980 -y 330 -swap {0 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29 30 31 32 33 34 35 36 37 38 39 40 41 42 43 44 47 54 51 48 52 53 46 50 45 49 55} -defaultsOSRD -pinDir S00_AXI left -pinY S00_AXI 0L -pinDir S_AXI_INTR left -pinY S_AXI_INTR 20L -pinDir bram_port right -pinY bram_port 0R -pinDir i_sw1 left -pinY i_sw1 340L -pinDir i_sw2 left -pinY i_sw2 540L -pinBusDir i_addra_counter left -pinBusY i_addra_counter 440L -pinDir btn left -pinY btn 360L -pinDir o_count_go left -pinY o_count_go 460L -pinDir o_reset_counter left -pinY o_reset_counter 480L -pinDir s00_axi_aclk left -pinY s00_axi_aclk 60L -pinDir s00_axi_aresetn left -pinY s00_axi_aresetn 400L -pinDir s_axi_intr_aclk left -pinY s_axi_intr_aclk 40L -pinDir s_axi_intr_aresetn left -pinY s_axi_intr_aresetn 380L -pinDir irq left -pinY irq 560L
+preplace inst addr_counter_0 -pg 1 -lvl 5 -x 1610 -y 770 -swap {0 1 3 4 2} -defaultsOSRD -pinDir clk left -pinY clk 0L -pinDir i_reset left -pinY i_reset 20L -pinDir i_count_go right -pinY i_count_go 20R -pinDir i_reset_counter right -pinY i_reset_counter 40R -pinBusDir o_addra_counter right -pinBusY o_addra_counter 0R
+preplace netloc addr_counter_0_o_addra_counter 1 5 1 N 770
+preplace netloc axi_uartlite_0_interrupt 1 2 4 NJ 1050 NJ 1050 NJ 1050 N
+preplace netloc btn_0_1 1 0 6 NJ 690 NJ 690 NJ 690 NJ 690 NJ 690 NJ
+preplace netloc clk_100MHz_1 1 0 5 20 770 NJ 770 NJ 770 NJ 770 NJ
+preplace netloc clk_wiz_1_clk_out1 1 1 5 220 590 600 650 900 570 1420 430 1780
+preplace netloc clk_wiz_1_locked 1 1 1 N 510
+preplace netloc gpio_to_bram_0_irq 1 2 4 NJ 1070 NJ 1070 NJ 1070 1820
+preplace netloc gpio_to_bram_0_o_count_go 1 5 1 N 790
+preplace netloc gpio_to_bram_0_o_reset_counter 1 5 1 N 810
+preplace netloc i_sw1_0_1 1 0 6 NJ 670 NJ 670 NJ 670 NJ 670 NJ 670 NJ
+preplace netloc i_sw2_0_1 1 0 6 NJ 870 NJ 870 NJ 870 NJ 870 NJ 870 NJ
+preplace netloc mdm_1_debug_sys_rst 1 2 1 NJ 70
+preplace netloc microblaze_0_intr 1 2 1 620 590n
+preplace netloc reset_rtl_0_1 1 0 2 20 430 NJ
+preplace netloc rst_clk_wiz_1_100M_bus_struct_reset 1 2 3 NJ 150 900J 10 1440
+preplace netloc rst_clk_wiz_1_100M_mb_reset 1 2 2 580 130 920
+preplace netloc rst_clk_wiz_1_100M_peripheral_aresetn 1 2 4 580 790 NJ 790 1460 710 1800
+preplace netloc axi_bram_ctrl_0_BRAM_PORTA 1 6 1 N 230
+preplace netloc axi_uartlite_0_UART 1 6 2 NJ 990 NJ
+preplace netloc gpio_to_bram_0_bram_port 1 6 1 N 330
+preplace netloc microblaze_0_axi_dp 1 4 1 N 70
+preplace netloc microblaze_0_axi_periph_M01_AXI 1 5 1 N 190
+preplace netloc microblaze_0_axi_periph_M02_AXI 1 5 1 1760 370n
+preplace netloc microblaze_0_axi_periph_M03_AXI 1 5 1 N 330
+preplace netloc microblaze_0_axi_periph_M04_AXI 1 5 1 N 350
+preplace netloc microblaze_0_debug 1 3 1 N 70
+preplace netloc microblaze_0_dlmb_1 1 4 1 N 490
+preplace netloc microblaze_0_ilmb_1 1 4 1 N 510
+preplace netloc microblaze_0_intc_axi 1 3 2 NJ 590 1400
+preplace netloc microblaze_0_interrupt 1 3 1 N 210
+levelinfo -pg 1 0 120 400 760 1160 1610 1980 2270 2420
+pagesize -pg 1 -db -bbox -sgen -140 0 2540 1130
+",
+   "No Loops_ScaleFactor":"0.660177",
+   "No Loops_TopLeft":"-188,0",
+   "Reduced Jogs_ExpandedHierarchyInLayout":"",
+   "Reduced Jogs_Layers":"/reset_rtl_0_1:true|/rst_clk_wiz_1_100M_mb_reset:true|/clk_100MHz_1:true|/gpio_to_bram_0_irq:true|/axi_uartlite_0_interrupt:true|/rst_clk_wiz_1_100M_peripheral_aresetn:true|/clk_wiz_1_clk_out1:true|/rst_clk_wiz_1_100M_bus_struct_reset:true|/mdm_1_debug_sys_rst:true|",
+   "Reduced Jogs_Layout":"# # String gsaved with Nlview 7.0r4  2019-12-20 bk=1.5203 VDI=41 GEI=36 GUI=JA:10.0 TLS
+#  -string -flagsOSRD
+preplace port uart_rtl_0 -pg 1 -lvl 8 -x 2800 -y 880 -defaultsOSRD
+preplace port port-id_clk_100MHz -pg 1 -lvl 0 -x 0 -y 880 -defaultsOSRD
+preplace port port-id_reset_rtl_0 -pg 1 -lvl 0 -x 0 -y 800 -defaultsOSRD
+preplace port port-id_i_sw1 -pg 1 -lvl 0 -x 0 -y 1060 -defaultsOSRD
+preplace port port-id_i_sw2 -pg 1 -lvl 0 -x 0 -y 1080 -defaultsOSRD
+preplace port port-id_btn -pg 1 -lvl 0 -x 0 -y 60 -defaultsOSRD
+preplace inst microblaze_0 -pg 1 -lvl 4 -x 1260 -y 880 -swap {0 1 2 3 16 5 6 7 8 9 10 11 12 13 14 15 25 17 18 19 20 21 22 23 24 4 26 27 28 29 30 31 32 33 34 35 36 37 38 39 40 41 42 43 44 45 46 47 48 49 50 51 52 53 54 55 56} -defaultsOSRD -pinY INTERRUPT 0L -pinY DLMB 40R -pinY ILMB 60R -pinY M_AXI_DP 0R -pinY DEBUG 20L -pinY Clk 40L -pinY Reset 60L
+preplace inst microblaze_0_local_memory -pg 1 -lvl 5 -x 1770 -y 920 -defaultsOSRD -pinY DLMB 0L -pinY ILMB 20L -pinY LMB_Clk 40L -pinY SYS_Rst 70L
+preplace inst microblaze_0_axi_periph -pg 1 -lvl 5 -x 1770 -y 400 -swap {0 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 100 21 22 23 24 25 26 27 28 29 30 31 32 33 34 35 36 37 38 39 60 41 42 43 44 45 46 47 48 49 50 51 52 53 54 55 56 57 58 59 80 61 62 63 64 65 66 67 68 69 70 71 72 73 74 75 76 77 78 79 20 81 82 83 84 85 86 87 88 89 90 91 92 93 94 95 96 97 98 99 40 101 102 103 104 105 106 107 108 109 110 111 112 113 114 115 116 117 118 119 127 120 128 121 129 122 130 123 131 124 132 125 133 126} -defaultsOSRD -pinY S00_AXI 60L -pinY M00_AXI 340R -pinY M01_AXI 300R -pinY M02_AXI 320R -pinY M03_AXI 0R -pinY M04_AXI 20R -pinY ACLK 220L -pinY ARESETN 80L -pinY S00_ACLK 240L -pinY S00_ARESETN 100L -pinY M00_ACLK 260L -pinY M00_ARESETN 120L -pinY M01_ACLK 280L -pinY M01_ARESETN 140L -pinY M02_ACLK 300L -pinY M02_ARESETN 160L -pinY M03_ACLK 320L -pinY M03_ARESETN 180L -pinY M04_ACLK 340L -pinY M04_ARESETN 200L
+preplace inst microblaze_0_axi_intc -pg 1 -lvl 3 -x 830 -y 660 -swap {0 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 23 26 22 24 25} -defaultsOSRD -pinY s_axi 0L -pinY interrupt 100R -pinY s_axi_aclk 40L -pinY s_axi_aresetn 100L -pinBusY intr 20L -pinY processor_clk 60L -pinY processor_rst 80L
+preplace inst microblaze_0_xlconcat -pg 1 -lvl 2 -x 440 -y 660 -swap {1 0 2} -defaultsOSRD -pinBusY In0 20L -pinBusY In1 0L -pinBusY dout 20R
+preplace inst mdm_1 -pg 1 -lvl 3 -x 830 -y 880 -defaultsOSRD -pinY MBDEBUG_0 0R -pinY Debug_SYS_Rst 20R
+preplace inst clk_wiz_1 -pg 1 -lvl 1 -x 120 -y 860 -defaultsOSRD -pinY resetn 0L -pinY clk_in1 20L -pinY clk_out1 0R -pinY locked 20R
+preplace inst rst_clk_wiz_1_100M -pg 1 -lvl 2 -x 440 -y 800 -swap {2 0 1 4 3 5 9 6 7 8} -defaultsOSRD -pinY slowest_sync_clk 40L -pinY ext_reset_in 0L -pinY aux_reset_in 20L -pinY mb_debug_sys_rst 100L -pinY dcm_locked 80L -pinY mb_reset 0R -pinBusY bus_struct_reset 100R -pinBusY peripheral_reset 20R -pinBusY interconnect_aresetn 40R -pinBusY peripheral_aresetn 60R
+preplace inst axi_uartlite_0 -pg 1 -lvl 6 -x 2270 -y 880 -defaultsOSRD -pinY S_AXI 0L -pinY UART 0R -pinY s_axi_aclk 20L -pinY s_axi_aresetn 40L -pinY interrupt 20R
+preplace inst axi_bram_ctrl_0 -pg 1 -lvl 6 -x 2270 -y 700 -defaultsOSRD -pinY S_AXI 0L -pinY BRAM_PORTA 0R -pinY BRAM_PORTA.bram_addr_a 20R -pinY BRAM_PORTA.bram_rddata_a 40R -pinY BRAM_PORTA.bram_en_a 60R -pinY s_axi_aclk 20L -pinY s_axi_aresetn 40L
+preplace inst edge_det_0 -pg 1 -lvl 5 -x 1770 -y 60 -swap {2 1 0 3} -defaultsOSRD -pinY clk 40L -pinY reset 20L -pinY data 0L -pinY pulse 40R
+preplace inst xlslice_0 -pg 1 -lvl 6 -x 2270 -y 280 -defaultsOSRD -pinBusY Din 0L -pinBusY Dout 0R
+preplace inst dual_port_bram_my_IP_0 -pg 1 -lvl 7 -x 2670 -y 940 -defaultsOSRD -pinY PORTA 0L -pinY PORTB 20L -pinY PORTB.enb_0 40L -pinY PORTB.doutb_0 60L -pinY PORTB.addrb_0 80L -pinY clka_0 100L -pinY clkb_0 120L
+preplace inst addr_counter_0 -pg 1 -lvl 5 -x 1770 -y 240 -swap {3 2 1 0 4} -defaultsOSRD -pinY clk 60L -pinY i_reset 40L -pinY i_count_go 20L -pinY i_reset_counter 0L -pinBusY o_addra_counter 60R
+preplace inst gpio_to_bram_0 -pg 1 -lvl 6 -x 2270 -y 400 -swap {0 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29 30 31 32 33 34 35 36 37 38 39 40 41 42 43 44 52 53 46 45 55 50 54 48 47 51 49} -defaultsOSRD -pinY S00_AXI 0L -pinY S_AXI_INTR 20L -pinY bram_port 120R -pinY i_sw1 140L -pinY i_sw2 160L -pinBusY i_addra_counter 60L -pinY btn 40L -pinY o_count_go 180R -pinY o_reset_counter 160R -pinY s00_axi_aclk 180L -pinY s00_axi_aresetn 100L -pinY s_axi_intr_aclk 80L -pinY s_axi_intr_aresetn 120L -pinY irq 140R
+preplace netloc addr_counter_0_o_addra_counter 1 5 1 1970 300n
+preplace netloc axi_bram_ctrl_0_bram_addr_a 1 5 2 2050 340 2450
+preplace netloc axi_bram_ctrl_0_bram_en_a 1 6 1 2490 760n
+preplace netloc axi_uartlite_0_interrupt 1 1 6 240 1100 NJ 1100 NJ 1100 NJ 1100 2070J 820 2430
+preplace netloc btn_1 1 0 5 NJ 60 NJ 60 NJ 60 NJ 60 NJ
+preplace netloc clk_100MHz_1 1 0 1 NJ 880
+preplace netloc clk_wiz_1_clk_out1 1 1 6 220 740 630 980 1010 1020 1490 840 2030 640 2470
+preplace netloc clk_wiz_1_locked 1 1 1 N 880
+preplace netloc dual_port_bram_my_IP_0_doutb_0 1 6 1 2510 740n
+preplace netloc edge_det_0_pulse 1 5 1 2030 100n
+preplace netloc gpio_to_bram_0_irq 1 1 6 220 600 NJ 600 NJ 600 1530J 800 1950J 220 2430
+preplace netloc gpio_to_bram_0_o_count_go 1 4 3 1570 160 NJ 160 2510
+preplace netloc gpio_to_bram_0_o_reset_counter 1 4 3 1590 180 NJ 180 2470
+preplace netloc i_sw1_1 1 0 6 NJ 1060 NJ 1060 NJ 1060 NJ 1060 NJ 1060 2010J
+preplace netloc i_sw2_1 1 0 6 NJ 1080 NJ 1080 NJ 1080 NJ 1080 NJ 1080 2050J
+preplace netloc mdm_1_debug_sys_rst 1 1 3 260 960 NJ 960 950
+preplace netloc microblaze_0_intr 1 2 1 N 680
+preplace netloc reset_rtl_0_1 1 0 2 20 800 NJ
+preplace netloc rst_clk_wiz_1_100M_bus_struct_reset 1 2 3 610 1040 NJ 1040 1590J
+preplace netloc rst_clk_wiz_1_100M_mb_reset 1 2 2 650 1000 970J
+preplace netloc rst_clk_wiz_1_100M_peripheral_aresetn 1 2 4 670 1020 990J 1000 1550 1040 1990
+preplace netloc xlslice_0_Dout 1 6 1 2530J 280n
+preplace netloc axi_uartlite_0_UART 1 6 2 NJ 880 NJ
+preplace netloc gpio_to_bram_0_bram_port 1 6 1 2550 520n
+preplace netloc microblaze_0_axi_dp 1 4 1 1510 460n
+preplace netloc microblaze_0_axi_periph_M01_AXI 1 5 1 N 700
+preplace netloc microblaze_0_axi_periph_M02_AXI 1 5 1 1970 720n
+preplace netloc microblaze_0_axi_periph_M03_AXI 1 5 1 N 400
+preplace netloc microblaze_0_axi_periph_M04_AXI 1 5 1 N 420
+preplace netloc microblaze_0_debug 1 3 1 970 880n
+preplace netloc microblaze_0_dlmb_1 1 4 1 N 920
+preplace netloc microblaze_0_ilmb_1 1 4 1 N 940
+preplace netloc microblaze_0_intc_axi 1 2 4 690 820 NJ 820 NJ 820 1930
+preplace netloc microblaze_0_interrupt 1 3 1 1010 760n
+levelinfo -pg 1 0 120 440 830 1260 1770 2270 2670 2800
+pagesize -pg 1 -db -bbox -sgen -130 0 2920 1120
+",
+   "Reduced Jogs_PinnedBlocks":"",
+   "Reduced Jogs_ScaleFactor":"0.601114",
+   "Reduced Jogs_TopLeft":"-135,-60",
+   "guistr":"# # String gsaved with Nlview 7.0r4  2019-12-20 bk=1.5203 VDI=41 GEI=36 GUI=JA:10.0 TLS
+#  -string -flagsOSRD
+preplace port uart_rtl_0 -pg 1 -lvl 8 -x 2520 -y 630 -defaultsOSRD
+preplace port port-id_clk_100MHz -pg 1 -lvl 0 -x 0 -y 660 -defaultsOSRD
+preplace port port-id_reset_rtl_0 -pg 1 -lvl 0 -x 0 -y 640 -defaultsOSRD
+preplace port port-id_i_sw1 -pg 1 -lvl 0 -x 0 -y 540 -defaultsOSRD
+preplace port port-id_i_sw2 -pg 1 -lvl 0 -x 0 -y 820 -defaultsOSRD
+preplace port port-id_btn -pg 1 -lvl 0 -x 0 -y 200 -defaultsOSRD
+preplace inst microblaze_0 -pg 1 -lvl 4 -x 1160 -y 670 -swap {0 1 2 3 16 5 6 7 8 9 10 11 12 13 14 15 25 17 18 19 20 21 22 23 24 4 26 27 28 29 30 31 32 33 34 35 36 37 38 39 40 41 42 43 44 45 46 47 48 49 50 51 52 53 54 55 56} -defaultsOSRD
+preplace inst microblaze_0_local_memory -pg 1 -lvl 5 -x 1620 -y 700 -defaultsOSRD
+preplace inst microblaze_0_axi_periph -pg 1 -lvl 5 -x 1620 -y 360 -swap {0 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 100 21 22 23 24 25 26 27 28 29 30 31 32 33 34 35 36 37 38 39 20 41 42 43 44 45 46 47 48 49 50 51 52 53 54 55 56 57 58 59 80 61 62 63 64 65 66 67 68 69 70 71 72 73 74 75 76 77 78 79 40 81 82 83 84 85 86 87 88 89 90 91 92 93 94 95 96 97 98 99 60 101 102 103 104 105 106 107 108 109 110 111 112 113 114 115 116 117 118 119 127 120 128 121 129 122 130 123 131 124 132 125 133 126} -defaultsOSRD -resize 209 268
+preplace inst microblaze_0_axi_intc -pg 1 -lvl 3 -x 760 -y 420 -swap {0 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 23 25 22 24 26} -defaultsOSRD
+preplace inst microblaze_0_xlconcat -pg 1 -lvl 2 -x 420 -y 390 -swap {1 0 2} -defaultsOSRD
+preplace inst mdm_1 -pg 1 -lvl 3 -x 760 -y 670 -defaultsOSRD
+preplace inst clk_wiz_1 -pg 1 -lvl 1 -x 130 -y 650 -defaultsOSRD
+preplace inst rst_clk_wiz_1_100M -pg 1 -lvl 2 -x 420 -y 720 -swap {0 2 3 4 1 6 9 7 8 5} -defaultsOSRD
+preplace inst axi_uartlite_0 -pg 1 -lvl 6 -x 2040 -y 640 -defaultsOSRD
+preplace inst axi_bram_ctrl_0 -pg 1 -lvl 6 -x 2040 -y 200 -swap {0 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 29 28} -defaultsOSRD
+preplace inst blk_mem_gen_0 -pg 1 -lvl 7 -x 2370 -y 210 -swap {8 1 2 3 4 5 6 7 0 9 10 11 12 13 14 15 16 17} -defaultsOSRD
+preplace inst gpio_to_bram_0 -pg 1 -lvl 6 -x 2040 -y 430 -swap {0 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29 30 31 32 33 34 35 36 37 38 39 40 41 42 43 44 45 46 54 47 55 50 48 52 51 53 49} -defaultsOSRD
+preplace inst addr_counter_0 -pg 1 -lvl 5 -x 1620 -y 110 -swap {2 3 1 0 4} -defaultsOSRD
+preplace netloc addr_counter_0_o_addra_counter 1 5 1 1850 110n
+preplace netloc axi_uartlite_0_interrupt 1 1 6 240 560 NJ 560 NJ 560 1410J 610 1790J 720 2210
+preplace netloc btn_0_1 1 0 6 NJ 200 NJ 200 NJ 200 NJ 200 NJ 200 1800J
+preplace netloc clk_100MHz_1 1 0 5 30 570 NJ 570 NJ 570 NJ 570 1400
+preplace netloc clk_wiz_1_clk_out1 1 1 5 240 590 610 590 920 580 1450 550 1860
+preplace netloc clk_wiz_1_locked 1 1 1 230 660n
+preplace netloc gpio_to_bram_0_irq 1 1 6 240 310 NJ 310 NJ 310 1430J 520 1820J 280 2210
+preplace netloc gpio_to_bram_0_o_count_go 1 4 3 1450 20 NJ 20 2220
+preplace netloc gpio_to_bram_0_o_reset_counter 1 4 3 1400 10 NJ 10 2230
+preplace netloc i_sw1_0_1 1 0 6 NJ 540 NJ 540 NJ 540 NJ 540 NJ 540 1840J
+preplace netloc i_sw2_0_1 1 0 6 NJ 820 NJ 820 NJ 820 NJ 820 NJ 820 1870J
+preplace netloc mdm_1_debug_sys_rst 1 1 3 240 830 NJ 830 890
+preplace netloc microblaze_0_intr 1 2 1 N 390
+preplace netloc reset_rtl_0_1 1 0 2 20 720 NJ
+preplace netloc rst_clk_wiz_1_100M_bus_struct_reset 1 2 3 NJ 760 NJ 760 1430
+preplace netloc rst_clk_wiz_1_100M_mb_reset 1 2 2 620 600 900J
+preplace netloc rst_clk_wiz_1_100M_peripheral_aresetn 1 2 4 600 550 NJ 550 1440 560 1830
+preplace netloc axi_bram_ctrl_0_BRAM_PORTA 1 6 1 N 200
+preplace netloc axi_uartlite_0_UART 1 6 2 NJ 630 NJ
+preplace netloc gpio_to_bram_0_bram_port 1 6 1 2240 220n
+preplace netloc microblaze_0_axi_dp 1 4 1 1420 265n
+preplace netloc microblaze_0_axi_periph_M01_AXI 1 5 1 1790 180n
+preplace netloc microblaze_0_axi_periph_M02_AXI 1 5 1 1810 380n
+preplace netloc microblaze_0_axi_periph_M03_AXI 1 5 1 N 340
+preplace netloc microblaze_0_axi_periph_M04_AXI 1 5 1 N 360
+preplace netloc microblaze_0_debug 1 3 1 N 660
+preplace netloc microblaze_0_dlmb_1 1 4 1 N 670
+preplace netloc microblaze_0_ilmb_1 1 4 1 N 690
+preplace netloc microblaze_0_intc_axi 1 2 4 630 530 NJ 530 NJ 530 1790
+preplace netloc microblaze_0_interrupt 1 3 1 910 420n
+levelinfo -pg 1 0 130 420 760 1160 1620 2040 2370 2520
+pagesize -pg 1 -db -bbox -sgen -140 0 2640 840
+"
+}
+{
+   "da_axi4_cnt":"14",
+   "da_board_cnt":"11",
+   "da_bram_cntlr_cnt":"7",
+   "da_clkrst_cnt":"49",
+   "da_mb_cnt":"1"
+}

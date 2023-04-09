@@ -1,0 +1,483 @@
+#-----------------------------------------------------------
+# Vivado v2022.1 (64-bit)
+# SW Build 3526262 on Mon Apr 18 15:47:01 MDT 2022
+# IP Build 3524634 on Mon Apr 18 20:55:01 MDT 2022
+# Start of session at: Fri Mar 31 20:22:48 2023
+# Process ID: 80833
+# Current directory: /home/jack/erase/project_1/project_1.runs/synth_1
+# Command line: vivado -log design_1_wrapper.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source design_1_wrapper.tcl
+# Log file: /home/jack/erase/project_1/project_1.runs/synth_1/design_1_wrapper.vds
+# Journal file: /home/jack/erase/project_1/project_1.runs/synth_1/vivado.jou
+# Running On: jk, OS: Linux, CPU Frequency: 1200.000 MHz, CPU Physical cores: 12, Host memory: 6062 MB
+#-----------------------------------------------------------
+source design_1_wrapper.tcl -notrace
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/jack/mcrblz_four/myIP_four'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/tools/Xilinx/Vivado/2022.1/data/ip'.
+Command: read_checkpoint -auto_incremental -incremental /home/jack/erase/project_1/project_1.srcs/utils_1/imports/synth_1/design_1_wrapper.dcp
+INFO: [Vivado 12-5825] Read reference checkpoint from /home/jack/erase/project_1/project_1.srcs/utils_1/imports/synth_1/design_1_wrapper.dcp for incremental synthesis
+INFO: [Vivado 12-7989] Please ensure there are no constraint changes
+Command: synth_design -top design_1_wrapper -part xc7a100tcsg324-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: [Device 21-403] Loading part xc7a100tcsg324-1
+INFO: [Designutils 20-5440] No compile time benefit to using incremental synthesis; A full resynthesis will be run
+INFO: [Designutils 20-4379] Flow is switching to default flow due to incremental criteria not met. If you would like to alter this behaviour and have the flow terminate instead, please set the following parameter config_implementation {autoIncr.Synth.RejectBehavior Terminate}
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 4 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 80856
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 2707.453 ; gain = 0.000 ; free physical = 110 ; free virtual = 592
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'design_1_wrapper' [/home/jack/erase/project_1/project_1.gen/sources_1/bd/design_1/hdl/design_1_wrapper.v:12]
+INFO: [Synth 8-6157] synthesizing module 'design_1' [/home/jack/erase/project_1/project_1.gen/sources_1/bd/design_1/synth/design_1.v:12]
+INFO: [Synth 8-6157] synthesizing module 'design_1_addr_counter_0_1' [/home/jack/erase/project_1/project_1.runs/synth_1/.Xil/Vivado-80833-jk/realtime/design_1_addr_counter_0_1_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_addr_counter_0_1' (0#1) [/home/jack/erase/project_1/project_1.runs/synth_1/.Xil/Vivado-80833-jk/realtime/design_1_addr_counter_0_1_stub.v:5]
+INFO: [Synth 8-6157] synthesizing module 'design_1_axi_bram_ctrl_0_0' [/home/jack/erase/project_1/project_1.runs/synth_1/.Xil/Vivado-80833-jk/realtime/design_1_axi_bram_ctrl_0_0_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_axi_bram_ctrl_0_0' (0#1) [/home/jack/erase/project_1/project_1.runs/synth_1/.Xil/Vivado-80833-jk/realtime/design_1_axi_bram_ctrl_0_0_stub.v:5]
+WARNING: [Synth 8-7071] port 'bram_rst_a' of module 'design_1_axi_bram_ctrl_0_0' is unconnected for instance 'axi_bram_ctrl_0' [/home/jack/erase/project_1/project_1.gen/sources_1/bd/design_1/synth/design_1.v:214]
+WARNING: [Synth 8-7071] port 'bram_clk_a' of module 'design_1_axi_bram_ctrl_0_0' is unconnected for instance 'axi_bram_ctrl_0' [/home/jack/erase/project_1/project_1.gen/sources_1/bd/design_1/synth/design_1.v:214]
+WARNING: [Synth 8-7071] port 'bram_we_a' of module 'design_1_axi_bram_ctrl_0_0' is unconnected for instance 'axi_bram_ctrl_0' [/home/jack/erase/project_1/project_1.gen/sources_1/bd/design_1/synth/design_1.v:214]
+WARNING: [Synth 8-7071] port 'bram_wrdata_a' of module 'design_1_axi_bram_ctrl_0_0' is unconnected for instance 'axi_bram_ctrl_0' [/home/jack/erase/project_1/project_1.gen/sources_1/bd/design_1/synth/design_1.v:214]
+WARNING: [Synth 8-7023] instance 'axi_bram_ctrl_0' of module 'design_1_axi_bram_ctrl_0_0' has 28 connections declared, but only 24 given [/home/jack/erase/project_1/project_1.gen/sources_1/bd/design_1/synth/design_1.v:214]
+INFO: [Synth 8-6157] synthesizing module 'design_1_axi_uartlite_0_0' [/home/jack/erase/project_1/project_1.runs/synth_1/.Xil/Vivado-80833-jk/realtime/design_1_axi_uartlite_0_0_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_axi_uartlite_0_0' (0#1) [/home/jack/erase/project_1/project_1.runs/synth_1/.Xil/Vivado-80833-jk/realtime/design_1_axi_uartlite_0_0_stub.v:5]
+INFO: [Synth 8-6157] synthesizing module 'design_1_clk_wiz_1_0' [/home/jack/erase/project_1/project_1.runs/synth_1/.Xil/Vivado-80833-jk/realtime/design_1_clk_wiz_1_0_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_clk_wiz_1_0' (0#1) [/home/jack/erase/project_1/project_1.runs/synth_1/.Xil/Vivado-80833-jk/realtime/design_1_clk_wiz_1_0_stub.v:5]
+INFO: [Synth 8-6157] synthesizing module 'design_1_dual_port_bram_my_IP_0_0' [/home/jack/erase/project_1/project_1.runs/synth_1/.Xil/Vivado-80833-jk/realtime/design_1_dual_port_bram_my_IP_0_0_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_dual_port_bram_my_IP_0_0' (0#1) [/home/jack/erase/project_1/project_1.runs/synth_1/.Xil/Vivado-80833-jk/realtime/design_1_dual_port_bram_my_IP_0_0_stub.v:5]
+INFO: [Synth 8-6157] synthesizing module 'design_1_edge_det_0_0' [/home/jack/erase/project_1/project_1.runs/synth_1/.Xil/Vivado-80833-jk/realtime/design_1_edge_det_0_0_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_edge_det_0_0' (0#1) [/home/jack/erase/project_1/project_1.runs/synth_1/.Xil/Vivado-80833-jk/realtime/design_1_edge_det_0_0_stub.v:5]
+INFO: [Synth 8-6157] synthesizing module 'design_1_gpio_to_bram_0_1' [/home/jack/erase/project_1/project_1.runs/synth_1/.Xil/Vivado-80833-jk/realtime/design_1_gpio_to_bram_0_1_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_gpio_to_bram_0_1' (0#1) [/home/jack/erase/project_1/project_1.runs/synth_1/.Xil/Vivado-80833-jk/realtime/design_1_gpio_to_bram_0_1_stub.v:5]
+INFO: [Synth 8-6157] synthesizing module 'design_1_mdm_1_0' [/home/jack/erase/project_1/project_1.runs/synth_1/.Xil/Vivado-80833-jk/realtime/design_1_mdm_1_0_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_mdm_1_0' (0#1) [/home/jack/erase/project_1/project_1.runs/synth_1/.Xil/Vivado-80833-jk/realtime/design_1_mdm_1_0_stub.v:5]
+INFO: [Synth 8-6157] synthesizing module 'design_1_microblaze_0_0' [/home/jack/erase/project_1/project_1.runs/synth_1/.Xil/Vivado-80833-jk/realtime/design_1_microblaze_0_0_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_microblaze_0_0' (0#1) [/home/jack/erase/project_1/project_1.runs/synth_1/.Xil/Vivado-80833-jk/realtime/design_1_microblaze_0_0_stub.v:5]
+INFO: [Synth 8-6157] synthesizing module 'design_1_microblaze_0_axi_intc_0' [/home/jack/erase/project_1/project_1.runs/synth_1/.Xil/Vivado-80833-jk/realtime/design_1_microblaze_0_axi_intc_0_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_microblaze_0_axi_intc_0' (0#1) [/home/jack/erase/project_1/project_1.runs/synth_1/.Xil/Vivado-80833-jk/realtime/design_1_microblaze_0_axi_intc_0_stub.v:5]
+INFO: [Synth 8-6157] synthesizing module 'design_1_microblaze_0_axi_periph_0' [/home/jack/erase/project_1/project_1.gen/sources_1/bd/design_1/synth/design_1.v:593]
+INFO: [Synth 8-6157] synthesizing module 'm00_couplers_imp_8RVYHO' [/home/jack/erase/project_1/project_1.gen/sources_1/bd/design_1/synth/design_1.v:1473]
+INFO: [Synth 8-6155] done synthesizing module 'm00_couplers_imp_8RVYHO' (0#1) [/home/jack/erase/project_1/project_1.gen/sources_1/bd/design_1/synth/design_1.v:1473]
+INFO: [Synth 8-6157] synthesizing module 'm01_couplers_imp_1UTB3Y5' [/home/jack/erase/project_1/project_1.gen/sources_1/bd/design_1/synth/design_1.v:1605]
+INFO: [Synth 8-6155] done synthesizing module 'm01_couplers_imp_1UTB3Y5' (0#1) [/home/jack/erase/project_1/project_1.gen/sources_1/bd/design_1/synth/design_1.v:1605]
+INFO: [Synth 8-6157] synthesizing module 'm02_couplers_imp_7ANRHB' [/home/jack/erase/project_1/project_1.gen/sources_1/bd/design_1/synth/design_1.v:1751]
+INFO: [Synth 8-6155] done synthesizing module 'm02_couplers_imp_7ANRHB' (0#1) [/home/jack/erase/project_1/project_1.gen/sources_1/bd/design_1/synth/design_1.v:1751]
+INFO: [Synth 8-6157] synthesizing module 'm03_couplers_imp_1W07O72' [/home/jack/erase/project_1/project_1.gen/sources_1/bd/design_1/synth/design_1.v:1883]
+INFO: [Synth 8-6155] done synthesizing module 'm03_couplers_imp_1W07O72' (0#1) [/home/jack/erase/project_1/project_1.gen/sources_1/bd/design_1/synth/design_1.v:1883]
+INFO: [Synth 8-6157] synthesizing module 'm04_couplers_imp_5LX7BU' [/home/jack/erase/project_1/project_1.gen/sources_1/bd/design_1/synth/design_1.v:2029]
+INFO: [Synth 8-6155] done synthesizing module 'm04_couplers_imp_5LX7BU' (0#1) [/home/jack/erase/project_1/project_1.gen/sources_1/bd/design_1/synth/design_1.v:2029]
+INFO: [Synth 8-6157] synthesizing module 's00_couplers_imp_1RZP34U' [/home/jack/erase/project_1/project_1.gen/sources_1/bd/design_1/synth/design_1.v:2409]
+INFO: [Synth 8-6155] done synthesizing module 's00_couplers_imp_1RZP34U' (0#1) [/home/jack/erase/project_1/project_1.gen/sources_1/bd/design_1/synth/design_1.v:2409]
+INFO: [Synth 8-6157] synthesizing module 'design_1_xbar_0' [/home/jack/erase/project_1/project_1.runs/synth_1/.Xil/Vivado-80833-jk/realtime/design_1_xbar_0_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_xbar_0' (0#1) [/home/jack/erase/project_1/project_1.runs/synth_1/.Xil/Vivado-80833-jk/realtime/design_1_xbar_0_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_microblaze_0_axi_periph_0' (0#1) [/home/jack/erase/project_1/project_1.gen/sources_1/bd/design_1/synth/design_1.v:593]
+INFO: [Synth 8-6157] synthesizing module 'microblaze_0_local_memory_imp_1K0VQXK' [/home/jack/erase/project_1/project_1.gen/sources_1/bd/design_1/synth/design_1.v:2175]
+INFO: [Synth 8-6157] synthesizing module 'design_1_dlmb_bram_if_cntlr_0' [/home/jack/erase/project_1/project_1.runs/synth_1/.Xil/Vivado-80833-jk/realtime/design_1_dlmb_bram_if_cntlr_0_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_dlmb_bram_if_cntlr_0' (0#1) [/home/jack/erase/project_1/project_1.runs/synth_1/.Xil/Vivado-80833-jk/realtime/design_1_dlmb_bram_if_cntlr_0_stub.v:5]
+INFO: [Synth 8-6157] synthesizing module 'design_1_dlmb_v10_0' [/home/jack/erase/project_1/project_1.runs/synth_1/.Xil/Vivado-80833-jk/realtime/design_1_dlmb_v10_0_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_dlmb_v10_0' (0#1) [/home/jack/erase/project_1/project_1.runs/synth_1/.Xil/Vivado-80833-jk/realtime/design_1_dlmb_v10_0_stub.v:5]
+WARNING: [Synth 8-7071] port 'LMB_Rst' of module 'design_1_dlmb_v10_0' is unconnected for instance 'dlmb_v10' [/home/jack/erase/project_1/project_1.gen/sources_1/bd/design_1/synth/design_1.v:2321]
+WARNING: [Synth 8-7023] instance 'dlmb_v10' of module 'design_1_dlmb_v10_0' has 25 connections declared, but only 24 given [/home/jack/erase/project_1/project_1.gen/sources_1/bd/design_1/synth/design_1.v:2321]
+INFO: [Synth 8-6157] synthesizing module 'design_1_ilmb_bram_if_cntlr_0' [/home/jack/erase/project_1/project_1.runs/synth_1/.Xil/Vivado-80833-jk/realtime/design_1_ilmb_bram_if_cntlr_0_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_ilmb_bram_if_cntlr_0' (0#1) [/home/jack/erase/project_1/project_1.runs/synth_1/.Xil/Vivado-80833-jk/realtime/design_1_ilmb_bram_if_cntlr_0_stub.v:5]
+INFO: [Synth 8-6157] synthesizing module 'design_1_ilmb_v10_0' [/home/jack/erase/project_1/project_1.runs/synth_1/.Xil/Vivado-80833-jk/realtime/design_1_ilmb_v10_0_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_ilmb_v10_0' (0#1) [/home/jack/erase/project_1/project_1.runs/synth_1/.Xil/Vivado-80833-jk/realtime/design_1_ilmb_v10_0_stub.v:5]
+WARNING: [Synth 8-7071] port 'LMB_Rst' of module 'design_1_ilmb_v10_0' is unconnected for instance 'ilmb_v10' [/home/jack/erase/project_1/project_1.gen/sources_1/bd/design_1/synth/design_1.v:2367]
+WARNING: [Synth 8-7023] instance 'ilmb_v10' of module 'design_1_ilmb_v10_0' has 25 connections declared, but only 24 given [/home/jack/erase/project_1/project_1.gen/sources_1/bd/design_1/synth/design_1.v:2367]
+INFO: [Synth 8-6157] synthesizing module 'design_1_lmb_bram_0' [/home/jack/erase/project_1/project_1.runs/synth_1/.Xil/Vivado-80833-jk/realtime/design_1_lmb_bram_0_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_lmb_bram_0' (0#1) [/home/jack/erase/project_1/project_1.runs/synth_1/.Xil/Vivado-80833-jk/realtime/design_1_lmb_bram_0_stub.v:5]
+WARNING: [Synth 8-7071] port 'rsta_busy' of module 'design_1_lmb_bram_0' is unconnected for instance 'lmb_bram' [/home/jack/erase/project_1/project_1.gen/sources_1/bd/design_1/synth/design_1.v:2392]
+WARNING: [Synth 8-7071] port 'rstb_busy' of module 'design_1_lmb_bram_0' is unconnected for instance 'lmb_bram' [/home/jack/erase/project_1/project_1.gen/sources_1/bd/design_1/synth/design_1.v:2392]
+WARNING: [Synth 8-7023] instance 'lmb_bram' of module 'design_1_lmb_bram_0' has 16 connections declared, but only 14 given [/home/jack/erase/project_1/project_1.gen/sources_1/bd/design_1/synth/design_1.v:2392]
+INFO: [Synth 8-6155] done synthesizing module 'microblaze_0_local_memory_imp_1K0VQXK' (0#1) [/home/jack/erase/project_1/project_1.gen/sources_1/bd/design_1/synth/design_1.v:2175]
+INFO: [Synth 8-6157] synthesizing module 'design_1_microblaze_0_xlconcat_0' [/home/jack/erase/project_1/project_1.gen/sources_1/bd/design_1/ip/design_1_microblaze_0_xlconcat_0/synth/design_1_microblaze_0_xlconcat_0.v:53]
+INFO: [Synth 8-6157] synthesizing module 'xlconcat_v2_1_4_xlconcat' [/home/jack/erase/project_1/project_1.gen/sources_1/bd/design_1/ipshared/4b67/hdl/xlconcat_v2_1_vl_rfs.v:14]
+INFO: [Synth 8-6155] done synthesizing module 'xlconcat_v2_1_4_xlconcat' (0#1) [/home/jack/erase/project_1/project_1.gen/sources_1/bd/design_1/ipshared/4b67/hdl/xlconcat_v2_1_vl_rfs.v:14]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_microblaze_0_xlconcat_0' (0#1) [/home/jack/erase/project_1/project_1.gen/sources_1/bd/design_1/ip/design_1_microblaze_0_xlconcat_0/synth/design_1_microblaze_0_xlconcat_0.v:53]
+INFO: [Synth 8-6157] synthesizing module 'design_1_rst_clk_wiz_1_100M_0' [/home/jack/erase/project_1/project_1.runs/synth_1/.Xil/Vivado-80833-jk/realtime/design_1_rst_clk_wiz_1_100M_0_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_rst_clk_wiz_1_100M_0' (0#1) [/home/jack/erase/project_1/project_1.runs/synth_1/.Xil/Vivado-80833-jk/realtime/design_1_rst_clk_wiz_1_100M_0_stub.v:5]
+WARNING: [Synth 8-7071] port 'peripheral_reset' of module 'design_1_rst_clk_wiz_1_100M_0' is unconnected for instance 'rst_clk_wiz_1_100M' [/home/jack/erase/project_1/project_1.gen/sources_1/bd/design_1/synth/design_1.v:579]
+WARNING: [Synth 8-7071] port 'interconnect_aresetn' of module 'design_1_rst_clk_wiz_1_100M_0' is unconnected for instance 'rst_clk_wiz_1_100M' [/home/jack/erase/project_1/project_1.gen/sources_1/bd/design_1/synth/design_1.v:579]
+WARNING: [Synth 8-7023] instance 'rst_clk_wiz_1_100M' of module 'design_1_rst_clk_wiz_1_100M_0' has 10 connections declared, but only 8 given [/home/jack/erase/project_1/project_1.gen/sources_1/bd/design_1/synth/design_1.v:579]
+INFO: [Synth 8-6157] synthesizing module 'design_1_xlslice_0_0' [/home/jack/erase/project_1/project_1.gen/sources_1/bd/design_1/ip/design_1_xlslice_0_0/synth/design_1_xlslice_0_0.v:53]
+INFO: [Synth 8-6157] synthesizing module 'xlslice_v1_0_2_xlslice' [/home/jack/erase/project_1/project_1.gen/sources_1/bd/design_1/ipshared/11d0/hdl/xlslice_v1_0_vl_rfs.v:13]
+INFO: [Synth 8-6155] done synthesizing module 'xlslice_v1_0_2_xlslice' (0#1) [/home/jack/erase/project_1/project_1.gen/sources_1/bd/design_1/ipshared/11d0/hdl/xlslice_v1_0_vl_rfs.v:13]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_xlslice_0_0' (0#1) [/home/jack/erase/project_1/project_1.gen/sources_1/bd/design_1/ip/design_1_xlslice_0_0/synth/design_1_xlslice_0_0.v:53]
+INFO: [Synth 8-6155] done synthesizing module 'design_1' (0#1) [/home/jack/erase/project_1/project_1.gen/sources_1/bd/design_1/synth/design_1.v:12]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_wrapper' (0#1) [/home/jack/erase/project_1/project_1.gen/sources_1/bd/design_1/hdl/design_1_wrapper.v:12]
+WARNING: [Synth 8-7129] Port Din[1] in module xlslice_v1_0_2_xlslice is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Din[0] in module xlslice_v1_0_2_xlslice is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In2[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In3[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In4[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In5[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In6[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In7[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In8[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In9[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In10[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In11[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In12[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In13[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In14[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In15[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In16[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In17[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In18[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In19[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In20[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In21[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In22[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In23[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In24[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In25[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In26[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In27[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In28[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In29[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In30[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In31[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In32[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In33[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In34[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In35[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In36[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In37[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In38[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In39[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In40[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In41[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In42[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In43[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In44[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In45[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In46[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In47[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In48[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In49[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In50[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In51[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In52[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In53[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In54[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In55[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In56[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In57[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In58[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In59[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In60[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In61[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In62[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In63[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In64[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In65[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In66[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In67[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In68[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In69[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In70[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In71[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In72[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In73[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In74[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In75[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In76[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In77[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In78[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In79[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In80[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In81[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In82[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In83[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In84[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In85[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In86[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In87[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In88[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In89[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In90[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In91[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In92[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In93[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In94[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In95[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In96[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In97[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In98[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In99[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+INFO: [Common 17-14] Message 'Synth 8-7129' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 2707.453 ; gain = 0.000 ; free physical = 1197 ; free virtual = 1694
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 2707.453 ; gain = 0.000 ; free physical = 1196 ; free virtual = 1694
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 2707.453 ; gain = 0.000 ; free physical = 1196 ; free virtual = 1694
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00.01 . Memory (MB): peak = 2707.453 ; gain = 0.000 ; free physical = 1186 ; free virtual = 1687
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [/home/jack/erase/project_1/project_1.gen/sources_1/bd/design_1/ip/design_1_microblaze_0_0/design_1_microblaze_0_0/design_1_microblaze_0_0_in_context.xdc] for cell 'design_1_i/microblaze_0'
+Finished Parsing XDC File [/home/jack/erase/project_1/project_1.gen/sources_1/bd/design_1/ip/design_1_microblaze_0_0/design_1_microblaze_0_0/design_1_microblaze_0_0_in_context.xdc] for cell 'design_1_i/microblaze_0'
+Parsing XDC File [/home/jack/erase/project_1/project_1.gen/sources_1/bd/design_1/ip/design_1_dlmb_v10_0/design_1_dlmb_v10_0/design_1_dlmb_v10_0_in_context.xdc] for cell 'design_1_i/microblaze_0_local_memory/dlmb_v10'
+Finished Parsing XDC File [/home/jack/erase/project_1/project_1.gen/sources_1/bd/design_1/ip/design_1_dlmb_v10_0/design_1_dlmb_v10_0/design_1_dlmb_v10_0_in_context.xdc] for cell 'design_1_i/microblaze_0_local_memory/dlmb_v10'
+Parsing XDC File [/home/jack/erase/project_1/project_1.gen/sources_1/bd/design_1/ip/design_1_ilmb_v10_0/design_1_ilmb_v10_0/design_1_dlmb_v10_0_in_context.xdc] for cell 'design_1_i/microblaze_0_local_memory/ilmb_v10'
+Finished Parsing XDC File [/home/jack/erase/project_1/project_1.gen/sources_1/bd/design_1/ip/design_1_ilmb_v10_0/design_1_ilmb_v10_0/design_1_dlmb_v10_0_in_context.xdc] for cell 'design_1_i/microblaze_0_local_memory/ilmb_v10'
+Parsing XDC File [/home/jack/erase/project_1/project_1.gen/sources_1/bd/design_1/ip/design_1_dlmb_bram_if_cntlr_0/design_1_dlmb_bram_if_cntlr_0/design_1_dlmb_bram_if_cntlr_0_in_context.xdc] for cell 'design_1_i/microblaze_0_local_memory/dlmb_bram_if_cntlr'
+Finished Parsing XDC File [/home/jack/erase/project_1/project_1.gen/sources_1/bd/design_1/ip/design_1_dlmb_bram_if_cntlr_0/design_1_dlmb_bram_if_cntlr_0/design_1_dlmb_bram_if_cntlr_0_in_context.xdc] for cell 'design_1_i/microblaze_0_local_memory/dlmb_bram_if_cntlr'
+Parsing XDC File [/home/jack/erase/project_1/project_1.gen/sources_1/bd/design_1/ip/design_1_ilmb_bram_if_cntlr_0/design_1_ilmb_bram_if_cntlr_0/design_1_ilmb_bram_if_cntlr_0_in_context.xdc] for cell 'design_1_i/microblaze_0_local_memory/ilmb_bram_if_cntlr'
+Finished Parsing XDC File [/home/jack/erase/project_1/project_1.gen/sources_1/bd/design_1/ip/design_1_ilmb_bram_if_cntlr_0/design_1_ilmb_bram_if_cntlr_0/design_1_ilmb_bram_if_cntlr_0_in_context.xdc] for cell 'design_1_i/microblaze_0_local_memory/ilmb_bram_if_cntlr'
+Parsing XDC File [/home/jack/erase/project_1/project_1.gen/sources_1/bd/design_1/ip/design_1_lmb_bram_0/design_1_lmb_bram_0/design_1_lmb_bram_0_in_context.xdc] for cell 'design_1_i/microblaze_0_local_memory/lmb_bram'
+Finished Parsing XDC File [/home/jack/erase/project_1/project_1.gen/sources_1/bd/design_1/ip/design_1_lmb_bram_0/design_1_lmb_bram_0/design_1_lmb_bram_0_in_context.xdc] for cell 'design_1_i/microblaze_0_local_memory/lmb_bram'
+Parsing XDC File [/home/jack/erase/project_1/project_1.gen/sources_1/bd/design_1/ip/design_1_xbar_0/design_1_xbar_0/design_1_xbar_0_in_context.xdc] for cell 'design_1_i/microblaze_0_axi_periph/xbar'
+Finished Parsing XDC File [/home/jack/erase/project_1/project_1.gen/sources_1/bd/design_1/ip/design_1_xbar_0/design_1_xbar_0/design_1_xbar_0_in_context.xdc] for cell 'design_1_i/microblaze_0_axi_periph/xbar'
+Parsing XDC File [/home/jack/erase/project_1/project_1.gen/sources_1/bd/design_1/ip/design_1_microblaze_0_axi_intc_0/design_1_microblaze_0_axi_intc_0/design_1_microblaze_0_axi_intc_0_in_context.xdc] for cell 'design_1_i/microblaze_0_axi_intc'
+Finished Parsing XDC File [/home/jack/erase/project_1/project_1.gen/sources_1/bd/design_1/ip/design_1_microblaze_0_axi_intc_0/design_1_microblaze_0_axi_intc_0/design_1_microblaze_0_axi_intc_0_in_context.xdc] for cell 'design_1_i/microblaze_0_axi_intc'
+Parsing XDC File [/home/jack/erase/project_1/project_1.gen/sources_1/bd/design_1/ip/design_1_mdm_1_0/design_1_mdm_1_0/design_1_mdm_1_0_in_context.xdc] for cell 'design_1_i/mdm_1'
+Finished Parsing XDC File [/home/jack/erase/project_1/project_1.gen/sources_1/bd/design_1/ip/design_1_mdm_1_0/design_1_mdm_1_0/design_1_mdm_1_0_in_context.xdc] for cell 'design_1_i/mdm_1'
+Parsing XDC File [/home/jack/erase/project_1/project_1.gen/sources_1/bd/design_1/ip/design_1_clk_wiz_1_0/design_1_clk_wiz_1_0/design_1_clk_wiz_1_0_in_context.xdc] for cell 'design_1_i/clk_wiz_1'
+Finished Parsing XDC File [/home/jack/erase/project_1/project_1.gen/sources_1/bd/design_1/ip/design_1_clk_wiz_1_0/design_1_clk_wiz_1_0/design_1_clk_wiz_1_0_in_context.xdc] for cell 'design_1_i/clk_wiz_1'
+Parsing XDC File [/home/jack/erase/project_1/project_1.gen/sources_1/bd/design_1/ip/design_1_rst_clk_wiz_1_100M_0/design_1_rst_clk_wiz_1_100M_0/design_1_rst_clk_wiz_1_100M_0_in_context.xdc] for cell 'design_1_i/rst_clk_wiz_1_100M'
+Finished Parsing XDC File [/home/jack/erase/project_1/project_1.gen/sources_1/bd/design_1/ip/design_1_rst_clk_wiz_1_100M_0/design_1_rst_clk_wiz_1_100M_0/design_1_rst_clk_wiz_1_100M_0_in_context.xdc] for cell 'design_1_i/rst_clk_wiz_1_100M'
+Parsing XDC File [/home/jack/erase/project_1/project_1.gen/sources_1/bd/design_1/ip/design_1_axi_uartlite_0_0/design_1_axi_uartlite_0_0/design_1_axi_uartlite_0_0_in_context.xdc] for cell 'design_1_i/axi_uartlite_0'
+Finished Parsing XDC File [/home/jack/erase/project_1/project_1.gen/sources_1/bd/design_1/ip/design_1_axi_uartlite_0_0/design_1_axi_uartlite_0_0/design_1_axi_uartlite_0_0_in_context.xdc] for cell 'design_1_i/axi_uartlite_0'
+Parsing XDC File [/home/jack/erase/project_1/project_1.gen/sources_1/bd/design_1/ip/design_1_axi_bram_ctrl_0_0/design_1_axi_bram_ctrl_0_0/design_1_axi_bram_ctrl_0_0_in_context.xdc] for cell 'design_1_i/axi_bram_ctrl_0'
+Finished Parsing XDC File [/home/jack/erase/project_1/project_1.gen/sources_1/bd/design_1/ip/design_1_axi_bram_ctrl_0_0/design_1_axi_bram_ctrl_0_0/design_1_axi_bram_ctrl_0_0_in_context.xdc] for cell 'design_1_i/axi_bram_ctrl_0'
+Parsing XDC File [/home/jack/erase/project_1/project_1.gen/sources_1/bd/design_1/ip/design_1_edge_det_0_0/design_1_edge_det_0_0/design_1_edge_det_0_0_in_context.xdc] for cell 'design_1_i/edge_det_0'
+Finished Parsing XDC File [/home/jack/erase/project_1/project_1.gen/sources_1/bd/design_1/ip/design_1_edge_det_0_0/design_1_edge_det_0_0/design_1_edge_det_0_0_in_context.xdc] for cell 'design_1_i/edge_det_0'
+Parsing XDC File [/home/jack/erase/project_1/project_1.gen/sources_1/bd/design_1/ip/design_1_dual_port_bram_my_IP_0_0/design_1_dual_port_bram_my_IP_0_0/design_1_dual_port_bram_my_IP_0_0_in_context.xdc] for cell 'design_1_i/dual_port_bram_my_IP_0'
+Finished Parsing XDC File [/home/jack/erase/project_1/project_1.gen/sources_1/bd/design_1/ip/design_1_dual_port_bram_my_IP_0_0/design_1_dual_port_bram_my_IP_0_0/design_1_dual_port_bram_my_IP_0_0_in_context.xdc] for cell 'design_1_i/dual_port_bram_my_IP_0'
+Parsing XDC File [/home/jack/erase/project_1/project_1.gen/sources_1/bd/design_1/ip/design_1_addr_counter_0_1/design_1_addr_counter_0_1/design_1_addr_counter_0_1_in_context.xdc] for cell 'design_1_i/addr_counter_0'
+Finished Parsing XDC File [/home/jack/erase/project_1/project_1.gen/sources_1/bd/design_1/ip/design_1_addr_counter_0_1/design_1_addr_counter_0_1/design_1_addr_counter_0_1_in_context.xdc] for cell 'design_1_i/addr_counter_0'
+Parsing XDC File [/home/jack/erase/project_1/project_1.gen/sources_1/bd/design_1/ip/design_1_gpio_to_bram_0_1/design_1_gpio_to_bram_0_1/design_1_gpio_to_bram_0_1_in_context.xdc] for cell 'design_1_i/gpio_to_bram_0'
+Finished Parsing XDC File [/home/jack/erase/project_1/project_1.gen/sources_1/bd/design_1/ip/design_1_gpio_to_bram_0_1/design_1_gpio_to_bram_0_1/design_1_gpio_to_bram_0_1_in_context.xdc] for cell 'design_1_i/gpio_to_bram_0'
+Parsing XDC File [/home/jack/erase/project_1/project_1.srcs/constrs_1/new/const.xdc]
+WARNING: [Constraints 18-619] A clock with name 'clk_100MHz' already exists, overwriting the previous clock with the same name. [/home/jack/erase/project_1/project_1.srcs/constrs_1/new/const.xdc:1]
+Finished Parsing XDC File [/home/jack/erase/project_1/project_1.srcs/constrs_1/new/const.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [/home/jack/erase/project_1/project_1.srcs/constrs_1/new/const.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/design_1_wrapper_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/design_1_wrapper_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Parsing XDC File [/home/jack/erase/project_1/project_1.runs/synth_1/dont_touch.xdc]
+Finished Parsing XDC File [/home/jack/erase/project_1/project_1.runs/synth_1/dont_touch.xdc]
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2771.484 ; gain = 0.000 ; free physical = 1069 ; free virtual = 1601
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2771.484 ; gain = 0.000 ; free physical = 1068 ; free virtual = 1601
+WARNING: [Timing 38-316] Clock period '20.000' specified during out-of-context synthesis of instance 'design_1_i/microblaze_0_local_memory/lmb_bram' at clock pin 'clka' is different from the actual clock period '10.000', this can lead to different synthesis results.
+INFO: [Designutils 20-5440] No compile time benefit to using incremental synthesis; A full resynthesis will be run
+INFO: [Designutils 20-4379] Flow is switching to default flow due to incremental criteria not met. If you would like to alter this behaviour and have the flow terminate instead, please set the following parameter config_implementation {autoIncr.Synth.RejectBehavior Terminate}
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:08 ; elapsed = 00:00:09 . Memory (MB): peak = 2771.484 ; gain = 64.031 ; free physical = 1128 ; free virtual = 1664
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a100tcsg324-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:08 ; elapsed = 00:00:09 . Memory (MB): peak = 2771.484 ; gain = 64.031 ; free physical = 1128 ; free virtual = 1664
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+Applied set_property IO_BUFFER_TYPE = NONE for clk_100MHz. (constraint file  /home/jack/erase/project_1/project_1.gen/sources_1/bd/design_1/ip/design_1_clk_wiz_1_0/design_1_clk_wiz_1_0/design_1_clk_wiz_1_0_in_context.xdc, line 3).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for clk_100MHz. (constraint file  /home/jack/erase/project_1/project_1.gen/sources_1/bd/design_1/ip/design_1_clk_wiz_1_0/design_1_clk_wiz_1_0/design_1_clk_wiz_1_0_in_context.xdc, line 4).
+Applied set_property KEEP_HIERARCHY = SOFT for design_1_i. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for design_1_i/microblaze_0. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for design_1_i/microblaze_0_local_memory/dlmb_v10. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for design_1_i/microblaze_0_local_memory/ilmb_v10. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for design_1_i/microblaze_0_local_memory/dlmb_bram_if_cntlr. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for design_1_i/microblaze_0_local_memory/ilmb_bram_if_cntlr. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for design_1_i/microblaze_0_local_memory/lmb_bram. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for design_1_i/microblaze_0_axi_periph/xbar. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for design_1_i/microblaze_0_axi_periph. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for design_1_i/microblaze_0_axi_intc. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for design_1_i/microblaze_0_xlconcat. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for design_1_i/mdm_1. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for design_1_i/clk_wiz_1. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for design_1_i/rst_clk_wiz_1_100M. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for design_1_i/axi_uartlite_0. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for design_1_i/axi_bram_ctrl_0. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for design_1_i/edge_det_0. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for design_1_i/xlslice_0. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for design_1_i/dual_port_bram_my_IP_0. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for design_1_i/addr_counter_0. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for design_1_i/gpio_to_bram_0. (constraint file  auto generated constraint).
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:08 ; elapsed = 00:00:09 . Memory (MB): peak = 2771.484 ; gain = 64.031 ; free physical = 1128 ; free virtual = 1664
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:08 ; elapsed = 00:00:09 . Memory (MB): peak = 2771.484 ; gain = 64.031 ; free physical = 1125 ; free virtual = 1663
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 240 (col length:80)
+BRAMs: 270 (col length: RAMB18 80 RAMB36 40)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-7080] Parallel synthesis criteria is not met
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:09 ; elapsed = 00:00:09 . Memory (MB): peak = 2771.484 ; gain = 64.031 ; free physical = 1108 ; free virtual = 1655
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-565] redefining clock 'clk_100MHz'
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:12 ; elapsed = 00:00:13 . Memory (MB): peak = 2771.484 ; gain = 64.031 ; free physical = 983 ; free virtual = 1539
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:12 ; elapsed = 00:00:13 . Memory (MB): peak = 2771.484 ; gain = 64.031 ; free physical = 983 ; free virtual = 1538
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:12 ; elapsed = 00:00:13 . Memory (MB): peak = 2771.484 ; gain = 64.031 ; free physical = 980 ; free virtual = 1536
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:14 ; elapsed = 00:00:15 . Memory (MB): peak = 2771.484 ; gain = 64.031 ; free physical = 976 ; free virtual = 1532
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:14 ; elapsed = 00:00:15 . Memory (MB): peak = 2771.484 ; gain = 64.031 ; free physical = 976 ; free virtual = 1532
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:14 ; elapsed = 00:00:15 . Memory (MB): peak = 2771.484 ; gain = 64.031 ; free physical = 976 ; free virtual = 1532
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:14 ; elapsed = 00:00:15 . Memory (MB): peak = 2771.484 ; gain = 64.031 ; free physical = 976 ; free virtual = 1532
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:14 ; elapsed = 00:00:15 . Memory (MB): peak = 2771.484 ; gain = 64.031 ; free physical = 976 ; free virtual = 1532
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:14 ; elapsed = 00:00:15 . Memory (MB): peak = 2771.484 ; gain = 64.031 ; free physical = 976 ; free virtual = 1532
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++------+----------------------------------+----------+
+|      |BlackBox name                     |Instances |
++------+----------------------------------+----------+
+|1     |design_1_xbar_0                   |         1|
+|2     |design_1_addr_counter_0_1         |         1|
+|3     |design_1_axi_bram_ctrl_0_0        |         1|
+|4     |design_1_axi_uartlite_0_0         |         1|
+|5     |design_1_clk_wiz_1_0              |         1|
+|6     |design_1_dual_port_bram_my_IP_0_0 |         1|
+|7     |design_1_edge_det_0_0             |         1|
+|8     |design_1_gpio_to_bram_0_1         |         1|
+|9     |design_1_mdm_1_0                  |         1|
+|10    |design_1_microblaze_0_0           |         1|
+|11    |design_1_microblaze_0_axi_intc_0  |         1|
+|12    |design_1_rst_clk_wiz_1_100M_0     |         1|
+|13    |design_1_dlmb_bram_if_cntlr_0     |         1|
+|14    |design_1_dlmb_v10_0               |         1|
+|15    |design_1_ilmb_bram_if_cntlr_0     |         1|
+|16    |design_1_ilmb_v10_0               |         1|
+|17    |design_1_lmb_bram_0               |         1|
++------+----------------------------------+----------+
+
+Report Cell Usage: 
++------+--------------------------------+------+
+|      |Cell                            |Count |
++------+--------------------------------+------+
+|1     |design_1_addr_counter_0         |     1|
+|2     |design_1_axi_bram_ctrl_0        |     1|
+|3     |design_1_axi_uartlite_0         |     1|
+|4     |design_1_clk_wiz_1              |     1|
+|5     |design_1_dlmb_bram_if_cntlr     |     1|
+|6     |design_1_dlmb_v10               |     1|
+|7     |design_1_dual_port_bram_my_IP_0 |     1|
+|8     |design_1_edge_det_0             |     1|
+|9     |design_1_gpio_to_bram_0         |     1|
+|10    |design_1_ilmb_bram_if_cntlr     |     1|
+|11    |design_1_ilmb_v10               |     1|
+|12    |design_1_lmb_bram               |     1|
+|13    |design_1_mdm_1                  |     1|
+|14    |design_1_microblaze_0           |     1|
+|15    |design_1_microblaze_0_axi_intc  |     1|
+|16    |design_1_rst_clk_wiz_1_100M     |     1|
+|17    |design_1_xbar                   |     1|
+|18    |IBUF                            |     5|
+|19    |OBUF                            |     1|
++------+--------------------------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:14 ; elapsed = 00:00:15 . Memory (MB): peak = 2771.484 ; gain = 64.031 ; free physical = 976 ; free virtual = 1532
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 16 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:13 ; elapsed = 00:00:14 . Memory (MB): peak = 2771.484 ; gain = 0.000 ; free physical = 1026 ; free virtual = 1582
+Synthesis Optimization Complete : Time (s): cpu = 00:00:14 ; elapsed = 00:00:15 . Memory (MB): peak = 2771.484 ; gain = 64.031 ; free physical = 1026 ; free virtual = 1582
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00.01 . Memory (MB): peak = 2771.484 ; gain = 0.000 ; free physical = 988 ; free virtual = 1574
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2771.484 ; gain = 0.000 ; free physical = 1020 ; free virtual = 1617
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Synth Design complete, checksum: 6aabf860
+INFO: [Common 17-83] Releasing license: Synthesis
+85 Infos, 119 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:20 ; elapsed = 00:00:18 . Memory (MB): peak = 2771.484 ; gain = 64.031 ; free physical = 1223 ; free virtual = 1820
+INFO: [Common 17-1381] The checkpoint '/home/jack/erase/project_1/project_1.runs/synth_1/design_1_wrapper.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file design_1_wrapper_utilization_synth.rpt -pb design_1_wrapper_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Fri Mar 31 20:23:14 2023...

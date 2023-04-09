@@ -1,0 +1,368 @@
+#-----------------------------------------------------------
+# Vivado v2022.1 (64-bit)
+# SW Build 3526262 on Mon Apr 18 15:47:01 MDT 2022
+# IP Build 3524634 on Mon Apr 18 20:55:01 MDT 2022
+# Start of session at: Fri Mar 31 20:17:17 2023
+# Process ID: 49444
+# Current directory: /home/jack/erase/project_1/project_1.runs/design_1_gpio_to_bram_0_1_synth_1
+# Command line: vivado -log design_1_gpio_to_bram_0_1.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source design_1_gpio_to_bram_0_1.tcl
+# Log file: /home/jack/erase/project_1/project_1.runs/design_1_gpio_to_bram_0_1_synth_1/design_1_gpio_to_bram_0_1.vds
+# Journal file: /home/jack/erase/project_1/project_1.runs/design_1_gpio_to_bram_0_1_synth_1/vivado.jou
+# Running On: jk, OS: Linux, CPU Frequency: 1200.000 MHz, CPU Physical cores: 12, Host memory: 6062 MB
+#-----------------------------------------------------------
+source design_1_gpio_to_bram_0_1.tcl -notrace
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/jack/mcrblz_four/myIP_four'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/tools/Xilinx/Vivado/2022.1/data/ip'.
+Command: synth_design -top design_1_gpio_to_bram_0_1 -part xc7a100tcsg324-1 -incremental_mode off -mode out_of_context
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: [Device 21-403] Loading part xc7a100tcsg324-1
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 4 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 49551
+WARNING: [Synth 8-8895] 'w_interrupt' is already implicitly declared on line 127 [/home/jack/erase/project_1/project_1.gen/sources_1/bd/design_1/ipshared/6612/hdl/gpio_to_bram_v1_0.v:155]
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 2704.484 ; gain = 0.000 ; free physical = 557 ; free virtual = 3654
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'design_1_gpio_to_bram_0_1' [/home/jack/erase/project_1/project_1.gen/sources_1/bd/design_1/ip/design_1_gpio_to_bram_0_1/synth/design_1_gpio_to_bram_0_1.v:53]
+INFO: [Synth 8-6157] synthesizing module 'gpio_to_bram_v1_0' [/home/jack/erase/project_1/project_1.gen/sources_1/bd/design_1/ipshared/6612/hdl/gpio_to_bram_v1_0.v:5]
+INFO: [Synth 8-6157] synthesizing module 'gpio_to_bram_v1_0_S00_AXI' [/home/jack/erase/project_1/project_1.gen/sources_1/bd/design_1/ipshared/6612/hdl/gpio_to_bram_v1_0_S00_AXI.v:4]
+INFO: [Synth 8-226] default block is never used [/home/jack/erase/project_1/project_1.gen/sources_1/bd/design_1/ipshared/6612/hdl/gpio_to_bram_v1_0_S00_AXI.v:231]
+INFO: [Synth 8-226] default block is never used [/home/jack/erase/project_1/project_1.gen/sources_1/bd/design_1/ipshared/6612/hdl/gpio_to_bram_v1_0_S00_AXI.v:372]
+INFO: [Synth 8-6155] done synthesizing module 'gpio_to_bram_v1_0_S00_AXI' (0#1) [/home/jack/erase/project_1/project_1.gen/sources_1/bd/design_1/ipshared/6612/hdl/gpio_to_bram_v1_0_S00_AXI.v:4]
+INFO: [Synth 8-6157] synthesizing module 'gpio_to_bram_v1_0_S_AXI_INTR' [/home/jack/erase/project_1/project_1.gen/sources_1/bd/design_1/ipshared/6612/hdl/gpio_to_bram_v1_0_S_AXI_INTR.v:4]
+INFO: [Synth 8-6155] done synthesizing module 'gpio_to_bram_v1_0_S_AXI_INTR' (0#1) [/home/jack/erase/project_1/project_1.gen/sources_1/bd/design_1/ipshared/6612/hdl/gpio_to_bram_v1_0_S_AXI_INTR.v:4]
+INFO: [Synth 8-6157] synthesizing module 'SM' [/home/jack/erase/project_1/project_1.gen/sources_1/bd/design_1/ipshared/6612/hdl/SM.v:2]
+INFO: [Synth 8-6155] done synthesizing module 'SM' (0#1) [/home/jack/erase/project_1/project_1.gen/sources_1/bd/design_1/ipshared/6612/hdl/SM.v:2]
+INFO: [Synth 8-6155] done synthesizing module 'gpio_to_bram_v1_0' (0#1) [/home/jack/erase/project_1/project_1.gen/sources_1/bd/design_1/ipshared/6612/hdl/gpio_to_bram_v1_0.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_gpio_to_bram_0_1' (0#1) [/home/jack/erase/project_1/project_1.gen/sources_1/bd/design_1/ip/design_1_gpio_to_bram_0_1/synth/design_1_gpio_to_bram_0_1.v:53]
+WARNING: [Synth 8-6014] Unused sequential element intr_all_ff_reg was removed.  [/home/jack/erase/project_1/project_1.gen/sources_1/bd/design_1/ipshared/6612/hdl/gpio_to_bram_v1_0_S_AXI_INTR.v:530]
+WARNING: [Synth 8-6014] Unused sequential element o_interrupt_reg was removed.  [/home/jack/erase/project_1/project_1.gen/sources_1/bd/design_1/ipshared/6612/hdl/SM.v:30]
+WARNING: [Synth 8-6014] Unused sequential element o_count_go_reg was removed.  [/home/jack/erase/project_1/project_1.gen/sources_1/bd/design_1/ipshared/6612/hdl/SM.v:35]
+WARNING: [Synth 8-7129] Port S_AXI_AWPROT[2] in module gpio_to_bram_v1_0_S_AXI_INTR is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXI_AWPROT[1] in module gpio_to_bram_v1_0_S_AXI_INTR is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXI_AWPROT[0] in module gpio_to_bram_v1_0_S_AXI_INTR is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXI_WDATA[31] in module gpio_to_bram_v1_0_S_AXI_INTR is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXI_WDATA[30] in module gpio_to_bram_v1_0_S_AXI_INTR is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXI_WDATA[29] in module gpio_to_bram_v1_0_S_AXI_INTR is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXI_WDATA[28] in module gpio_to_bram_v1_0_S_AXI_INTR is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXI_WDATA[27] in module gpio_to_bram_v1_0_S_AXI_INTR is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXI_WDATA[26] in module gpio_to_bram_v1_0_S_AXI_INTR is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXI_WDATA[25] in module gpio_to_bram_v1_0_S_AXI_INTR is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXI_WDATA[24] in module gpio_to_bram_v1_0_S_AXI_INTR is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXI_WDATA[23] in module gpio_to_bram_v1_0_S_AXI_INTR is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXI_WDATA[22] in module gpio_to_bram_v1_0_S_AXI_INTR is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXI_WDATA[21] in module gpio_to_bram_v1_0_S_AXI_INTR is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXI_WDATA[20] in module gpio_to_bram_v1_0_S_AXI_INTR is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXI_WDATA[19] in module gpio_to_bram_v1_0_S_AXI_INTR is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXI_WDATA[18] in module gpio_to_bram_v1_0_S_AXI_INTR is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXI_WDATA[17] in module gpio_to_bram_v1_0_S_AXI_INTR is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXI_WDATA[16] in module gpio_to_bram_v1_0_S_AXI_INTR is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXI_WDATA[15] in module gpio_to_bram_v1_0_S_AXI_INTR is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXI_WDATA[14] in module gpio_to_bram_v1_0_S_AXI_INTR is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXI_WDATA[13] in module gpio_to_bram_v1_0_S_AXI_INTR is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXI_WDATA[12] in module gpio_to_bram_v1_0_S_AXI_INTR is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXI_WDATA[11] in module gpio_to_bram_v1_0_S_AXI_INTR is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXI_WDATA[10] in module gpio_to_bram_v1_0_S_AXI_INTR is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXI_WDATA[9] in module gpio_to_bram_v1_0_S_AXI_INTR is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXI_WDATA[8] in module gpio_to_bram_v1_0_S_AXI_INTR is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXI_WDATA[7] in module gpio_to_bram_v1_0_S_AXI_INTR is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXI_WDATA[6] in module gpio_to_bram_v1_0_S_AXI_INTR is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXI_WDATA[5] in module gpio_to_bram_v1_0_S_AXI_INTR is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXI_WDATA[4] in module gpio_to_bram_v1_0_S_AXI_INTR is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXI_WDATA[3] in module gpio_to_bram_v1_0_S_AXI_INTR is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXI_WDATA[2] in module gpio_to_bram_v1_0_S_AXI_INTR is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXI_WDATA[1] in module gpio_to_bram_v1_0_S_AXI_INTR is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXI_WSTRB[3] in module gpio_to_bram_v1_0_S_AXI_INTR is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXI_WSTRB[2] in module gpio_to_bram_v1_0_S_AXI_INTR is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXI_WSTRB[1] in module gpio_to_bram_v1_0_S_AXI_INTR is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXI_WSTRB[0] in module gpio_to_bram_v1_0_S_AXI_INTR is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXI_ARPROT[2] in module gpio_to_bram_v1_0_S_AXI_INTR is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXI_ARPROT[1] in module gpio_to_bram_v1_0_S_AXI_INTR is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXI_ARPROT[0] in module gpio_to_bram_v1_0_S_AXI_INTR is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXI_AWPROT[2] in module gpio_to_bram_v1_0_S00_AXI is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXI_AWPROT[1] in module gpio_to_bram_v1_0_S00_AXI is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXI_AWPROT[0] in module gpio_to_bram_v1_0_S00_AXI is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXI_ARPROT[2] in module gpio_to_bram_v1_0_S00_AXI is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXI_ARPROT[1] in module gpio_to_bram_v1_0_S00_AXI is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXI_ARPROT[0] in module gpio_to_bram_v1_0_S00_AXI is either unconnected or has no load
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 2704.484 ; gain = 0.000 ; free physical = 1661 ; free virtual = 4758
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 2704.484 ; gain = 0.000 ; free physical = 1660 ; free virtual = 4758
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 2704.484 ; gain = 0.000 ; free physical = 1660 ; free virtual = 4758
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00 . Memory (MB): peak = 2704.484 ; gain = 0.000 ; free physical = 1655 ; free virtual = 4752
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2768.516 ; gain = 0.000 ; free physical = 1578 ; free virtual = 4675
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00.02 ; elapsed = 00:00:00.01 . Memory (MB): peak = 2768.516 ; gain = 0.000 ; free physical = 1578 ; free virtual = 4675
+INFO: [Designutils 20-5008] Incremental synthesis strategy off
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:08 ; elapsed = 00:00:08 . Memory (MB): peak = 2768.516 ; gain = 64.031 ; free physical = 1637 ; free virtual = 4738
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a100tcsg324-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:08 ; elapsed = 00:00:08 . Memory (MB): peak = 2768.516 ; gain = 64.031 ; free physical = 1637 ; free virtual = 4738
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:08 ; elapsed = 00:00:08 . Memory (MB): peak = 2768.516 ; gain = 64.031 ; free physical = 1637 ; free virtual = 4738
+---------------------------------------------------------------------------------
+INFO: [Synth 8-802] inferred FSM for state register 'state_reg_reg' in module 'SM'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                    init |                                0 |                               00
+                    load |                                1 |                               01
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'state_reg_reg' using encoding 'sequential' in module 'SM'
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:08 ; elapsed = 00:00:08 . Memory (MB): peak = 2768.516 ; gain = 64.031 ; free physical = 1631 ; free virtual = 4733
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Registers : 
+	               32 Bit    Registers := 7     
+	               11 Bit    Registers := 1     
+	                5 Bit    Registers := 2     
+	                4 Bit    Registers := 3     
+	                2 Bit    Registers := 4     
+	                1 Bit    Registers := 25    
++---Muxes : 
+	   2 Input   32 Bit        Muxes := 8     
+	   4 Input   32 Bit        Muxes := 5     
+	   2 Input   11 Bit        Muxes := 1     
+	   2 Input    1 Bit        Muxes := 13    
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 240 (col length:80)
+BRAMs: 270 (col length: RAMB18 80 RAMB36 40)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-7080] Parallel synthesis criteria is not met
+INFO: [Synth 8-3917] design design_1_gpio_to_bram_0_1 has port dina_two_bit[31] driven by constant 0
+INFO: [Synth 8-3917] design design_1_gpio_to_bram_0_1 has port dina_two_bit[30] driven by constant 0
+INFO: [Synth 8-3917] design design_1_gpio_to_bram_0_1 has port dina_two_bit[29] driven by constant 0
+INFO: [Synth 8-3917] design design_1_gpio_to_bram_0_1 has port dina_two_bit[28] driven by constant 0
+INFO: [Synth 8-3917] design design_1_gpio_to_bram_0_1 has port dina_two_bit[27] driven by constant 0
+INFO: [Synth 8-3917] design design_1_gpio_to_bram_0_1 has port dina_two_bit[26] driven by constant 0
+INFO: [Synth 8-3917] design design_1_gpio_to_bram_0_1 has port dina_two_bit[25] driven by constant 0
+INFO: [Synth 8-3917] design design_1_gpio_to_bram_0_1 has port dina_two_bit[24] driven by constant 0
+INFO: [Synth 8-3917] design design_1_gpio_to_bram_0_1 has port dina_two_bit[23] driven by constant 0
+INFO: [Synth 8-3917] design design_1_gpio_to_bram_0_1 has port dina_two_bit[22] driven by constant 0
+INFO: [Synth 8-3917] design design_1_gpio_to_bram_0_1 has port dina_two_bit[21] driven by constant 0
+INFO: [Synth 8-3917] design design_1_gpio_to_bram_0_1 has port dina_two_bit[20] driven by constant 0
+INFO: [Synth 8-3917] design design_1_gpio_to_bram_0_1 has port dina_two_bit[19] driven by constant 0
+INFO: [Synth 8-3917] design design_1_gpio_to_bram_0_1 has port dina_two_bit[18] driven by constant 0
+INFO: [Synth 8-3917] design design_1_gpio_to_bram_0_1 has port dina_two_bit[17] driven by constant 0
+INFO: [Synth 8-3917] design design_1_gpio_to_bram_0_1 has port dina_two_bit[16] driven by constant 0
+INFO: [Synth 8-3917] design design_1_gpio_to_bram_0_1 has port dina_two_bit[15] driven by constant 0
+INFO: [Synth 8-3917] design design_1_gpio_to_bram_0_1 has port dina_two_bit[14] driven by constant 0
+INFO: [Synth 8-3917] design design_1_gpio_to_bram_0_1 has port dina_two_bit[13] driven by constant 0
+INFO: [Synth 8-3917] design design_1_gpio_to_bram_0_1 has port dina_two_bit[12] driven by constant 0
+INFO: [Synth 8-3917] design design_1_gpio_to_bram_0_1 has port dina_two_bit[11] driven by constant 0
+INFO: [Synth 8-3917] design design_1_gpio_to_bram_0_1 has port dina_two_bit[10] driven by constant 0
+INFO: [Synth 8-3917] design design_1_gpio_to_bram_0_1 has port dina_two_bit[9] driven by constant 0
+INFO: [Synth 8-3917] design design_1_gpio_to_bram_0_1 has port dina_two_bit[8] driven by constant 0
+INFO: [Synth 8-3917] design design_1_gpio_to_bram_0_1 has port dina_two_bit[7] driven by constant 0
+INFO: [Synth 8-3917] design design_1_gpio_to_bram_0_1 has port dina_two_bit[6] driven by constant 0
+INFO: [Synth 8-3917] design design_1_gpio_to_bram_0_1 has port dina_two_bit[5] driven by constant 0
+INFO: [Synth 8-3917] design design_1_gpio_to_bram_0_1 has port dina_two_bit[4] driven by constant 0
+INFO: [Synth 8-3917] design design_1_gpio_to_bram_0_1 has port dina_two_bit[3] driven by constant 0
+INFO: [Synth 8-3917] design design_1_gpio_to_bram_0_1 has port dina_two_bit[2] driven by constant 0
+WARNING: [Synth 8-7129] Port s00_axi_awprot[2] in module design_1_gpio_to_bram_0_1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s00_axi_awprot[1] in module design_1_gpio_to_bram_0_1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s00_axi_awprot[0] in module design_1_gpio_to_bram_0_1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s00_axi_arprot[2] in module design_1_gpio_to_bram_0_1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s00_axi_arprot[1] in module design_1_gpio_to_bram_0_1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s00_axi_arprot[0] in module design_1_gpio_to_bram_0_1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_intr_awprot[2] in module design_1_gpio_to_bram_0_1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_intr_awprot[1] in module design_1_gpio_to_bram_0_1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_intr_awprot[0] in module design_1_gpio_to_bram_0_1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_intr_wdata[31] in module design_1_gpio_to_bram_0_1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_intr_wdata[30] in module design_1_gpio_to_bram_0_1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_intr_wdata[29] in module design_1_gpio_to_bram_0_1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_intr_wdata[28] in module design_1_gpio_to_bram_0_1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_intr_wdata[27] in module design_1_gpio_to_bram_0_1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_intr_wdata[26] in module design_1_gpio_to_bram_0_1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_intr_wdata[25] in module design_1_gpio_to_bram_0_1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_intr_wdata[24] in module design_1_gpio_to_bram_0_1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_intr_wdata[23] in module design_1_gpio_to_bram_0_1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_intr_wdata[22] in module design_1_gpio_to_bram_0_1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_intr_wdata[21] in module design_1_gpio_to_bram_0_1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_intr_wdata[20] in module design_1_gpio_to_bram_0_1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_intr_wdata[19] in module design_1_gpio_to_bram_0_1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_intr_wdata[18] in module design_1_gpio_to_bram_0_1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_intr_wdata[17] in module design_1_gpio_to_bram_0_1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_intr_wdata[16] in module design_1_gpio_to_bram_0_1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_intr_wdata[15] in module design_1_gpio_to_bram_0_1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_intr_wdata[14] in module design_1_gpio_to_bram_0_1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_intr_wdata[13] in module design_1_gpio_to_bram_0_1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_intr_wdata[12] in module design_1_gpio_to_bram_0_1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_intr_wdata[11] in module design_1_gpio_to_bram_0_1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_intr_wdata[10] in module design_1_gpio_to_bram_0_1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_intr_wdata[9] in module design_1_gpio_to_bram_0_1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_intr_wdata[8] in module design_1_gpio_to_bram_0_1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_intr_wdata[7] in module design_1_gpio_to_bram_0_1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_intr_wdata[6] in module design_1_gpio_to_bram_0_1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_intr_wdata[5] in module design_1_gpio_to_bram_0_1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_intr_wdata[4] in module design_1_gpio_to_bram_0_1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_intr_wdata[3] in module design_1_gpio_to_bram_0_1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_intr_wdata[2] in module design_1_gpio_to_bram_0_1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_intr_wdata[1] in module design_1_gpio_to_bram_0_1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_intr_wstrb[3] in module design_1_gpio_to_bram_0_1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_intr_wstrb[2] in module design_1_gpio_to_bram_0_1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_intr_wstrb[1] in module design_1_gpio_to_bram_0_1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_intr_wstrb[0] in module design_1_gpio_to_bram_0_1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_intr_arprot[2] in module design_1_gpio_to_bram_0_1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_intr_arprot[1] in module design_1_gpio_to_bram_0_1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_intr_arprot[0] in module design_1_gpio_to_bram_0_1 is either unconnected or has no load
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:09 ; elapsed = 00:00:09 . Memory (MB): peak = 2768.516 ; gain = 64.031 ; free physical = 1617 ; free virtual = 4723
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:12 ; elapsed = 00:00:12 . Memory (MB): peak = 2768.516 ; gain = 64.031 ; free physical = 1500 ; free virtual = 4606
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:12 ; elapsed = 00:00:12 . Memory (MB): peak = 2768.516 ; gain = 64.031 ; free physical = 1499 ; free virtual = 4606
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:12 ; elapsed = 00:00:12 . Memory (MB): peak = 2768.516 ; gain = 64.031 ; free physical = 1497 ; free virtual = 4603
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:14 ; elapsed = 00:00:14 . Memory (MB): peak = 2768.516 ; gain = 64.031 ; free physical = 1497 ; free virtual = 4603
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:14 ; elapsed = 00:00:14 . Memory (MB): peak = 2768.516 ; gain = 64.031 ; free physical = 1497 ; free virtual = 4603
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:14 ; elapsed = 00:00:14 . Memory (MB): peak = 2768.516 ; gain = 64.031 ; free physical = 1497 ; free virtual = 4603
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:14 ; elapsed = 00:00:14 . Memory (MB): peak = 2768.516 ; gain = 64.031 ; free physical = 1497 ; free virtual = 4603
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:14 ; elapsed = 00:00:14 . Memory (MB): peak = 2768.516 ; gain = 64.031 ; free physical = 1497 ; free virtual = 4603
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:14 ; elapsed = 00:00:14 . Memory (MB): peak = 2768.516 ; gain = 64.031 ; free physical = 1497 ; free virtual = 4603
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+-----+------+
+|      |Cell |Count |
++------+-----+------+
+|1     |LUT1 |     2|
+|2     |LUT2 |    18|
+|3     |LUT3 |     6|
+|4     |LUT4 |    29|
+|5     |LUT5 |     3|
+|6     |LUT6 |    45|
+|7     |FDRE |   208|
+|8     |FDSE |     2|
++------+-----+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:14 ; elapsed = 00:00:14 . Memory (MB): peak = 2768.516 ; gain = 64.031 ; free physical = 1497 ; free virtual = 4603
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 48 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:13 ; elapsed = 00:00:13 . Memory (MB): peak = 2768.516 ; gain = 0.000 ; free physical = 1551 ; free virtual = 4658
+Synthesis Optimization Complete : Time (s): cpu = 00:00:14 ; elapsed = 00:00:15 . Memory (MB): peak = 2768.516 ; gain = 64.031 ; free physical = 1551 ; free virtual = 4658
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2768.516 ; gain = 0.000 ; free physical = 1639 ; free virtual = 4745
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2768.516 ; gain = 0.000 ; free physical = 1572 ; free virtual = 4682
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Synth Design complete, checksum: 88ddfb82
+INFO: [Common 17-83] Releasing license: Synthesis
+60 Infos, 99 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:20 ; elapsed = 00:00:18 . Memory (MB): peak = 2768.516 ; gain = 64.031 ; free physical = 1778 ; free virtual = 4888
+INFO: [Common 17-1381] The checkpoint '/home/jack/erase/project_1/project_1.runs/design_1_gpio_to_bram_0_1_synth_1/design_1_gpio_to_bram_0_1.dcp' has been generated.
+INFO: [Coretcl 2-1648] Added synthesis output to IP cache for IP design_1_gpio_to_bram_0_1, cache-ID = abfa20cb60121677
+INFO: [Coretcl 2-1174] Renamed 4 cell refs.
+INFO: [Common 17-1381] The checkpoint '/home/jack/erase/project_1/project_1.runs/design_1_gpio_to_bram_0_1_synth_1/design_1_gpio_to_bram_0_1.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file design_1_gpio_to_bram_0_1_utilization_synth.rpt -pb design_1_gpio_to_bram_0_1_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Fri Mar 31 20:17:44 2023...
